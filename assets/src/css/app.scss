@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Nexa Heavy";
+  src: url(../fonts/NexaHeavy.otf);
+}
+
+@font-face {
+  font-family: "Nexa Bold";
+  src: url(../fonts/NexaBold.otf);
+}
+
+@font-face {
+  font-family: "Nexa Black";
+  src: url(../fonts/NexaBlack.otf);
+}
+
+@font-face {
+  font-family: "Nexa Light";
+  src: url(../fonts/NexaLight.otf);
+}
+
+@font-face {
+  font-family: "Nexa Regular";
+  src: url(../fonts/NexaRegular.otf);
+}
+
+@font-face {
+  font-family: "Montserrat Black";
+  src: url(../fonts/Montserrat-Black.woff2);
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url(../fonts/Montserrat-Bold.woff2);
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url(../fonts/Montserrat-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Kommissar Condensed";
+  src: url(../fonts/KommissarCondensed-Medium.woff2);
+}
+
+@font-face {
+  font-family: "Ubuntu Bold";
+  src: url(../fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Ubuntu Regular";
+  src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Ubuntu Light";
+  src: url(../fonts/Ubuntu-Light.ttf);
+}
+
+@font-face {
+  font-family: "Ubuntu Medium";
+  src: url(../fonts/Ubuntu-Medium.ttf);
+}
+
+.tiny-slider-wrap .tns-outer {
+  position: relative;
+}
+
+.tiny-slider-wrap [data-controls] {
+  border: 0;
+  padding: 0;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  background: transparent;
+}
+
+.tiny-slider-wrap [data-controls="prev"] {
+  left: 20px;
+  rotate: 180deg;
+}
+
+.tiny-slider-wrap [data-controls="next"] {
+  right: 80px;
+}
+
+/* .top_arrows .tns-controls {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  top: -40px;
+  z-index: 20;
+} */
+
+.top_arrows [data-controls="next"] {
+  margin-left: 20px;
+}
+
+.top_arrows .tns-controls {
+  padding-right: 80px;
+}
+
+.tns-nav,
+.tns-outer [data-action="stop"],
+.tns-outer [data-action="start"] {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  [data-controls="prev"],
+  [data-controls="next"] {
+    width: 30px;
+  }
+}
