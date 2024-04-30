@@ -115,3 +115,121 @@
     width: 30px;
   }
 }
+
+/**
+video slider home page 
+*/
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video_container .swiper {
+  width: 100%;
+  height: 325px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video_container .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.video_container .mySwiper2 {
+  height: 60%;
+  width: 100%;
+}
+
+.video_container .mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.video_container .mySwiper .swiper-slide img {
+  height: 70%;
+}
+
+.video_container .mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.video_container .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper .swiper-button-next::after,
+.mySwiper .swiper-button-prev::after,
+.basicSwiper .swiper-button-next::after,
+.basicSwiper .swiper-button-prev::after,
+.featuredSwiper .swiper-button-next::after,
+.featuredSwiper .swiper-button-prev::after {
+  content: "";
+}
+
+.video_container .swiper-button-next,
+.video_container .swiper-button-prev {
+  top: 110px;
+}
+
+.swiper-scrollbar {
+  background: #d6d6d6;
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  border-radius: 2px;
+  height: 5px;
+  width: 300px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.swiper-scrollbar-drag {
+  width: 135px !important;
+}
+
+@media (min-width: 1200px) {
+  .video_container .mySwiper {
+    height: 325px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video_container .swiper-slide img {
+    height: 70%;
+  }
+
+  .video_container .swiper-button-next,
+  .video_container .swiper-button-prev,
+  .swiper-scrollbar,
+  .basicSwiper .swiper-button-next,
+  .basicSwiper .swiper-button-prev,
+  .featuredSwiper .swiper-button-next,
+  .featuredSwiper .swiper-button-prev {
+    display: none;
+  }
+}
+
+@media (max-width: 460px) {
+  .video_container .swiper-slide img {
+    height: 65%;
+  }
+}
+
+/**
+Basic Swiper home page css
+**/
