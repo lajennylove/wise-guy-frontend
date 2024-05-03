@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite Tailwind Vanilla Boilerplate</title>
+
+    <!-- REQUIRED // Load js and css files -->
+    <script type="module" src="/main.js"></script>
+
+    <!-- NOT REQUIRED // Alpine.js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="post_container px-2 2xl:px-0">
+      <header
+        class="header_container px-3 max-w-[1430px] mx-auto border-b border-gray-400 2xl:px-0"
+      >
+        <div class="banner_top flex justify-between items-center py-4">
+          <p
+            class="title w-24 sm:w-52 font-ubuntuBold font-bold text-sm md:text-xl"
+          >
+            The Wise Guy
+          </p>
+
+          <div
+            class="play_btn w-28 sm:w-40 font-nexabold font-black text-xs md:text-lg"
+          >
+            <a
+              href="#"
+              class="block w-full text-black border border-white text-center rounded-full shadow-3xl bg-yellow-400 py-2 px-3 font-nexaheavy font-black"
+              >Play Casino</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <!--Breadcrumbs-->
+
+      <div
+        class="breadcrumbs font-roboto text-xs font-normalleading-6 px-3 max-w-[1430px] mx-auto pt-4 pb-6 md:text-base 2xl:px-0"
+      >
+        <a href="#" class="text-blue-600">Casino</a>
+        <span>&gt;</span>
+        <a href="#" class="text-blue-600">The Wise Guy</a>
+        <span>&gt;</span>
+        <a href="#">The Basics of Baccarat</a>
+      </div>
+
+      <!--Page content starts-->
+
+      <div class="main_container max-w-[1430px] mx-auto">
+        <div class="blocks flex gap-5 xl:gap-14">
+          <div class="table_block flex-auto w-1/4 max-w-72 hidden md:block">
+            <div class="w-full relative">
+              <div
+                class="table-contents hidden border border-slate-200 rounded-[10px] sticky top-1 z-50 bg-white md:block"
+              >
+                <div class="table_heading flex flex-col items-center">
+                  <div class="w-full py-2 mb-2 flex items-center border-b pl-4">
+                    <img
+                      src="/assets/src/images/book-saved.png"
+                      alt="book icon"
+                    />
+                    <span class="text-gray-800 font-nexabold text-xl pl-2"
+                      >Contents</span
+                    >
+                  </div>
+                  <div class="table_points pb-3">
+                    <ul
+                      class="content-list text-sm font-nexaregular text-slate-500 font-normal list-decimal pl-8"
+                    >
+                      <li class="px-2 mb-2">
+                        <a
+                          rel="nofollow"
+                          href="#"
+                          class="leading-7 text-slate-500 rounded-[10px] hover:bg-sky-100 hover:text-gray-800"
+                          >Rules of Baccarat</a
+                        >
+                      </li>
+                      <li class="px-2 mb-2">
+                        <a
+                          rel="nofollow"
+                          href="#"
+                          class="leading-7 text-slate-500 rounded-[10px] hover:bg-sky-100 hover:text-gray-800"
+                          >Baccarat Basic Rules</a
+                        >
+                      </li>
+                      <li class="px-2 mb-2">
+                        <a
+                          rel="nofollow"
+                          href="#"
+                          class="leading-7 text-slate-500 rounded-[10px] hover:bg-sky-100 hover:text-gray-80 line-clamp-1"
+                          >Baccarat - as described by Seymour hdhdhdhdj</a
+                        >
+                      </li>
+                      <li class="px-2 mb-2">
+                        <a
+                          rel="nofollow"
+                          href="#"
+                          class="leading-7 text-slate-500 rounded-[10px] hover:bg-sky-100 hover:text-gray-80 line-clamp-1"
+                          >Baccarat - Chemin de Fer</a
+                        >
+                      </li>
+                      <li class="px-2 mb-2">
+                        <a
+                          rel="nofollow"
+                          href="#"
+                          class="leading-7 text-slate-500 rounded-[10px] hover:bg-sky-100 hover:text-gray-80 line-clamp-1"
+                          >Baccarat - Punto Banco</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="content_block flex-auto w-full max-w-[710px] mx-auto md:w-1/2"
+          >
+            <div class="post_header">
+              <h1
+                class="post_title font-ubuntuRegular text-[32px] text-neutral-800 leading-[38px] md:text-[41px] md:leading-[45px]"
+              >
+                <span class="block font-light">The Basics</span>
+                <span class="block font-bold">of Baccarat</span>
+              </h1>
+              <p
+                class="post_subtitle font-nexaregular font-normal text-xl text-slate-600 mb-8 mt-5 md:text-2xl"
+              >
+                “It takes a minute to learn, but a lifetime to master.”
+              </p>
+
+              <div
+                class="post_meta_container flex items-center flex-wrap lg:flex-nowrap mb-6 font-roboto font-normal"
+              >
+                <div class="post_meta_author flex items-center w-full md:w-52">
+                  <img
+                    src="/assets/src/images/author.png"
+                    alt="post author image"
+                  />
+                  <a href="#" class="post_author_name ml-4 text-lg"
+                    >Alfonso Gonzalez</a
+                  >
+                </div>
+                <div class="post_meta_date mr-6 flex items-center">
+                  <span class="mr-4 text-grey-50 hidden md:block h-8"> . </span
+                  ><a href="#" class="text-base text-grey-50">
+                    Jun 22 - 22 min read </a
+                  ><span class="ml-4 text-grey-50 block h-8"> . </span>
+                </div>
+                <div class="post_meta_likes flex items-center">
+                  <img src="/assets/src/images/like_blue.png" alt="" /><span
+                    class="ml-2"
+                    >19</span
+                  >
+                </div>
+              </div>
+              <div class="post_social_links flex mt-4 gap-2.5">
+                <a href="#"
+                  ><img src="/assets/src/images/twitter.png" alt="icon"
+                /></a>
+                <a href="#"
+                  ><img src="/assets/src/images/linkedin.png" alt="icon"
+                /></a>
+                <a href="#"
+                  ><img src="/assets/src/images/facebook.png" alt="icon"
+                /></a>
+                <a href="#"
+                  ><img src="/assets/src/images/copy_link.png" alt="icon"
+                /></a>
+              </div>
+
+              <figure class="my-12">
+                <div class="w-full h-[474px] rounded overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/ft_image.png"
+                    alt="feature image"
+                  />
+                </div>
+                <figcaption
+                  class="text-slate-600 font-roboto text-xs font-normal leading-[18px] mt-2"
+                >
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium.
+                </figcaption>
+              </figure>
+
+              <div>
+                <h2
+                  class="text-gray-800 font-nexaheavy text-2xl font-black leading-7 md:text-[32px] md:leading-[38px]"
+                >
+                  Rules of Baccarat - Modern and historical Baccarat is a
+                  popular
+                </h2>
+                <p
+                  class="text-neutral-800 font-roboto font-normal text-lg leading-7 mt-8"
+                >
+                  card game played at Casinos throughout the world. It is
+                  particularly popular in Macau where "Punto Banco" Baccarat
+                  accounts for around 90% of income from casinos. Masters Games
+                  supplies different variations of the rules, including
+                  historical Baccarat rules described by Seymour in 1897 and
+                  modern Chemin de Fer and Punto Banco.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="twitter_block flex-auto w-1/4 max-w-64 mt-80 hidden md:block"
+          >
+            <img src="/assets/src/images/twitter_group.png" alt="twitter" />
+          </div>
+        </div>
+      </div>
+
+      <!--Promo Container-->
+
+      <div
+        class="promo_container flex justify-center items-center bg-slate-50 h-80 my-6"
+      >
+        <div class="promo font-nexaregular text-slate-500 text-xl">ADV</div>
+      </div>
+
+      <div class="content_block max-w-[710px] mx-auto">
+        <div class="mb-11">
+          <h2
+            class="text-gray-800 font-nexaheavy text-2xl font-black leading-7 md:text-[32px] md:leading-[38px]"
+          >
+            Rules of Baccarat - Modern and historical Baccarat is a popular
+          </h2>
+          <p
+            class="text-neutral-800 font-roboto font-normal text-lg leading-7 mt-8"
+          >
+            Each hand starts with 2 cards and a third may optionally be dealt.
+            The values are summed and the nearest to 9 wins. Where the sum goes
+            beyond 9, the value returns to 0 instead of going to 10 e.g. A pair
+            of cards 6 and 7 has a value of 3, not 13 and three cards 9, 6 and 9
+            have a value of 4. Just ignore the leading digit where the sum is 2
+            digits. The odds regarding whether to stick or take a third card are
+            trivially straightforward - if the sum is 4 or below then take a
+            card, 6 or above stick and only if its a five are the odds roughly
+            equal either way. The rules of the house usually make the game even
+            more simplistic because most house rules generally require both
+            player and banker to play the odds. The player's only freedom of
+            choice is normally whether or not to ask for a third card when the
+            sum is 5. The banker sometimes has slightly more freedom and can
+            sometimes draw on 3, 4, 5 or 6 depending upon what the players third
+            card (which is placed face-up) is but still game requires little
+            skill.
+          </p>
+        </div>
+        <div class="mb-11">
+          <h2
+            class="text-gray-800 font-nexaheavy text-2xl font-black leading-7 md:text-[32px] md:leading-[38px]"
+          >
+            Baccarat - as described by Seymour in 1897
+          </h2>
+          <p
+            class="text-neutral-800 font-roboto font-normal text-lg leading-7 mt-8"
+          >
+            This game is known in England as "Baccara Banque" or just "Baccara"
+            and in France as "Baccara a deux tableaux" - Baccara with two
+            tables. It isn't usually played in the USA. A definitive version of
+            the rules was written in a "Hoyle" by Richard Seymour published in
+            1897. Players usually bid to decide who is going to provide the bank
+            and the bank is held for the duration of the cards in the shoe or
+            until the banker chooses to relinquish it (whether due to bankruptcy
+            or otherwise). As in other banking games, for each deal, a player
+            plays head-to-head against the banker. To start, the banker places
+            the amount to be played for on the table and each player in turn has
+            the right to say 'Banco', and thus challenge the banker to play for
+            everything he has staked in one go. If this happens, the duel
+            happens directly and no other player is involved for that deal.
+            Otherwise, normal play occurs. The non-banking players are split
+            into two halves - one half being the players to the right of the
+            banker and the others those to the left. For each deal a
+            representative is chosen from each half to play against the banker.
+            To begin with these are the players either side of the banker but
+            when a player loses, the privilege passes to the next player along
+            and so on until all on that side of the table have played and the
+            representative duties return to the player next to the banker again.
+            So in effect, for each deal the banker plays two head-to-head games
+            against the two half-table representatives. The banker puts down the
+            initial stake and then players take turns to place down a stake of
+            any amount until the total for their half of the table equals the
+            banker's stake. The banker then deals two cards to himself, and to
+            the two representatives. If any of the banker or players have a
+            total of 8 or 9, it must be shown at once and the two other hands
+            are also then shown and bets are paid accordingly. Otherwise, each
+            of the three is given a chance to take a third class face down
+            starting with the player to the banker's right and ending with the
+            banker. If neither player accepts a third card, then the banker must
+            take a third card. Any third card is dealt face up and then all
+            hands are shown and bets paid accordingly. If a player has a better
+            hand than the banker, then the banker pays all bets on that side of
+            the table. If the hand is worse than the bankers, the banker
+            collects all bets on that side of the table. Otherwise it is a
+            stand-off and no money is exchanged.
+          </p>
+        </div>
+        <figure class="mb-11">
+          <div class="w-full h-[474px] rounded overflow-hidden">
+            <img
+              class="w-full h-full object-cover"
+              src="/assets/src/images/ft_image.png"
+              alt="feature image"
+            />
+          </div>
+          <figcaption
+            class="text-slate-600 font-roboto text-xs font-normal leading-[18px] mt-2"
+          >
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium.
+          </figcaption>
+        </figure>
+        <div class="mb-11">
+          <h2
+            class="text-gray-800 font-nexaheavy text-2xl font-black leading-7 md:text-[32px] md:leading-[38px]"
+          >
+            Rules of Baccarat - Modern and historical Baccarat is a popular
+          </h2>
+          <p
+            class="text-neutral-800 font-roboto font-normal text-lg leading-7 mt-8"
+          >
+            Each hand starts with 2 cards and a third may optionally be dealt.
+            The values are summed and the nearest to 9 wins. Where the sum goes
+            beyond 9, the value returns to 0 instead of going to 10 e.g. A pair
+            of cards 6 and 7 has a value of 3, not 13 and three cards 9, 6 and 9
+            have a value of 4. Just ignore the leading digit where the sum is 2
+            digits. The odds regarding whether to stick or take a third card are
+            trivially straightforward - if the sum is 4 or below then take a
+            card, 6 or above stick and only if its a five are the odds roughly
+            equal either way. The rules of the house usually make the game even
+            more simplistic because most house rules generally require both
+            player and banker to play the odds. The player's only freedom of
+            choice is normally whether or not to ask for a third card when the
+            sum is 5. The banker sometimes has slightly more freedom and can
+            sometimes draw on 3, 4, 5 or 6 depending upon what the players third
+            card (which is placed face-up) is but still game requires little
+            skill.
+          </p>
+        </div>
+        <div class="mb-11">
+          <h2
+            class="text-gray-800 font-nexaheavy text-2xl font-black leading-7 md:text-[32px] md:leading-[38px]"
+          >
+            Baccarat - as described by Seymour in 1897
+          </h2>
+          <p
+            class="text-neutral-800 font-roboto font-normal text-lg leading-7 mt-8"
+          >
+            This game is known in England as "Baccara Banque" or just "Baccara"
+            and in France as "Baccara a deux tableaux" - Baccara with two
+            tables. It isn't usually played in the USA. A definitive version of
+            the rules was written in a "Hoyle" by Richard Seymour published in
+            1897. Players usually bid to decide who is going to provide the bank
+            and the bank is held for the duration of the cards in the shoe or
+            until the banker chooses to relinquish it (whether due to bankruptcy
+            or otherwise). As in other banking games, for each deal, a player
+            plays head-to-head against the banker. To start, the banker places
+            the amount to be played for on the table and each player in turn has
+            the right to say 'Banco', and thus challenge the banker to play for
+            everything he has staked in one go. If this happens, the duel
+            happens directly and no other player is involved for that deal.
+            Otherwise, normal play occurs. The non-banking players are split
+            into two halves - one half being the players to the right of the
+            banker and the others those to the left. For each deal a
+            representative is chosen from each half to play against the banker.
+            To begin with these are the players either side of the banker but
+            when a player loses, the privilege passes to the next player along
+            and so on until all on that side of the table have played and the
+            representative duties return to the player next to the banker again.
+          </p>
+        </div>
+      </div>
+
+      <!--Promo Container-->
+
+      <div
+        class="promo_container flex justify-center items-center bg-slate-50 h-80 my-6"
+      >
+        <div class="promo font-nexaregular text-slate-500 text-xl">ADV</div>
+      </div>
+
+      <!--Tags container-->
+      <div class="tag_container max-w-[710px] mx-auto">
+        <h2
+          class="mb-6 font-ubuntuRegular text-[32px] text-neutral-800 leading-[38px] md:text-[41px] md:leading-[45px]"
+        >
+          What is...
+        </h2>
+
+        <div
+          class="tags text-gray-800 font-nexabold font-bold tracking-widest text-base flex gap-2 flex-wrap md:text-lg"
+        >
+          <a
+            href="#"
+            class="block px-5 py-2 bg-slate-200 rounded-full hover:bg-blue-600 hover:text-white"
+            >Action</a
+          >
+          <a
+            href="#"
+            class="block px-5 py-2 bg-slate-200 rounded-full hover:bg-blue-600 hover:text-white"
+            >Baccarat</a
+          >
+          <a
+            href="#"
+            class="block px-5 py-2 bg-slate-200 rounded-full hover:bg-blue-600 hover:text-white"
+            >Banco</a
+          >
+          <a
+            href="#"
+            class="block px-5 py-2 bg-slate-200 rounded-full hover:bg-blue-600 hover:text-white"
+            >Action</a
+          >
+          <a
+            href="#"
+            class="block px-5 py-2 bg-slate-200 rounded-full hover:bg-blue-600 hover:text-white"
+            >Baccarat</a
+          >
+          <a
+            href="#"
+            class="block px-5 py-2 bg-slate-200 rounded-full hover:bg-blue-600 hover:text-white"
+            >Banco</a
+          >
+          <a
+            href="#"
+            class="block px-5 py-2 bg-slate-200 rounded-full hover:bg-blue-600 hover:text-white"
+            >Action</a
+          >
+          <a
+            href="#"
+            class="block px-5 py-2 bg-slate-200 rounded-full hover:bg-blue-600 hover:text-white"
+            >Baccarat</a
+          >
+          <a
+            href="#"
+            class="block px-5 py-2 bg-slate-200 rounded-full hover:bg-blue-600 hover:text-white"
+            >Banco</a
+          >
+          <a
+            href="#"
+            class="block px-5 py-2 bg-slate-200 rounded-full hover:bg-blue-600 hover:text-white"
+            >Action</a
+          >
+          <a
+            href="#"
+            class="block px-5 py-2 bg-slate-200 rounded-full hover:bg-blue-600 hover:text-white"
+            >Caller</a
+          >
+          <a
+            href="#"
+            class="block px-5 py-2 bg-slate-200 rounded-full hover:bg-blue-600 hover:text-white"
+            >Burning</a
+          >
+          <a
+            href="#"
+            class="block px-5 py-2 bg-slate-200 rounded-full hover:bg-blue-600 hover:text-white"
+            >Baccarat</a
+          >
+          <a
+            href="#"
+            class="block px-5 py-2 bg-slate-200 rounded-full hover:bg-blue-600 hover:text-white"
+            >Banco</a
+          >
+          <a
+            href="#"
+            class="block px-5 py-2 bg-slate-200 rounded-full hover:bg-blue-600 hover:text-white"
+            >Action</a
+          >
+          <a
+            href="#"
+            class="block px-5 py-2 bg-slate-200 rounded-full hover:bg-blue-600 hover:text-white"
+            >Caller</a
+          >
+          <a
+            href="#"
+            class="block px-5 py-2 bg-slate-200 rounded-full hover:bg-blue-600 hover:text-white"
+            >Burning</a
+          >
+        </div>
+      </div>
+      <div class="max-w-[710px] mx-auto">
+        <div class="mt-11">
+          <h2
+            class="text-gray-800 font-nexaheavy text-2xl font-black leading-7 md:text-[32px] md:leading-[38px]"
+          >
+            Action
+          </h2>
+          <p
+            class="text-neutral-800 font-roboto font-normal text-lg leading-7 mt-8"
+          >
+            Each hand starts with 2 cards and a third may optionally be dealt.
+            The values are summed and the nearest to 9 wins. Where the sum goes
+            beyond 9, the value returns to 0 instead of going to 10 e.g.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+    <!--Page footer Starts-->
+    <footer
+      class="main_footer px-6 xl:px-0 font-nexabold font-bold relative top-20 bg-neutral-800"
+    >
+      <div class="main_footer mx-auto max-w-7xl">
+        <div
+          class="footer_head_section flex justify-between items-center py-8 border-b border-slate-600"
+        >
+          <div
+            class="footer_social_links flex justify-between items-center w-[80%] md:w-60"
+          >
+            <a href="#"
+              ><img
+                src="./assets/src/images/facebook_footer.png"
+                alt="facebook icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/src/images/instagram.png"
+                alt="instagram icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/src/images/twitter_footer.png"
+                alt="twitter icon"
+            /></a>
+            <a href="#"
+              ><img src="./assets/src/images/shape.png" alt="instagram icon"
+            /></a>
+            <a href="#"
+              ><img src="./assets/src/images/youtube.png" alt="youtube icon"
+            /></a>
+          </div>
+
+          <div class="footer_up_page">
+            <a href=""
+              ><img src="./assets/src/images/top.png" alt="up arrow"
+            /></a>
+          </div>
+        </div>
+
+        <div
+          class="footer_main_section flex flex-wrap justify-between text-white py-10 border-b border-slate-600"
+        >
+          <div class="link-group text-white w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Sportsbook
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/">Online Sportsbook</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/nfl/">NFL Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/ncaaf/">NCAAF Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/nba/">NBA Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/baseball/mlb/">MLB Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/mlb-world-series/">World Series Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/ice-hockey/nhl/">NHL Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/ncaab-college-basketball/">NCAAB Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/uefa-champions-league/"
+                >UEFA Champions League Odds</a
+              >
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/nascar/">Nascar Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/olympic-games/">Olympic Games Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/tennis-french-open/">French Open Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/live-betting/">Live Betting</a>
+            </p>
+          </div>
+
+          <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Casino
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/online-casino/">Online Casino Games</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/online-casino/tournaments/">Tournaments</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/bonuses/">Bonus Play</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/online-casino/blackjack/">Play Blackjack</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/online-casino/slots/">Online Slots</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/casino-guide/">Casino Guide</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/casino-guide/how-to-play-blackjack/"
+                >How to Play Blackjack</a
+              >
+            </p>
+          </div>
+
+          <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Racing
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/racebook/">Racebook</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/sportsbook/horse-racing/">Horse Racing Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/rules/racebook/horse-racing/">Horse Racing Rules</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/help/racebook/glossary/">Racebook Glossary</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/horse-racing/">Horse Race Betting</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/odds/pegasus-world-cup/">Pegasus World Cup</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/sports-betting/horse-racing/triple-crown/"
+                >Triple Crown Betting</a
+              >
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/sports-betting/horse-racing/news/">Horse Racing News</a>
+            </p>
+          </div>
+
+          <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Information
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/sports-betting/">Sports Betting News</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/betus-sportsbook-reviews/">BetUS Sportsbook Reviews</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/how-to-bet-online/">How to Bet Online</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/sports-betting-guide/">How to Bet On Sports</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/about-us/">About Us</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/rules/">Rules &amp; Regulations</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/help/">Help &amp; FAQ</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/press/">Press Room</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/odds/">Sporting Events Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a
+                href="https://revmasters.com/"
+                title="Affiliates - opens in a new window"
+                target="_blank"
+                >Affiliates</a
+              >
+            </p>
+          </div>
+
+          <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Betting Offers
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/bonuses/">Bonuses</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/online-casino/promotions/">Casino Promotions</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/contests/">Contests</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/promotions/welcome-bonus/">Sign Up Bonus</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/promotions/crypto-sign-up-bonus/">Crypto Bonus</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/promotions/casino-sign-up-bonus/">Casino Bonus</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="https://www.betus.com.pa/refer-a-friend-300/"
+                >Refer a Friend</a
+              >
+            </p>
+          </div>
+
+          <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Other
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <a class="" href="/join/benefits/">Why Join?</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <a href="/contact/">Contact Us</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <a href="tel:1(800)792-3887">1(800)792-3887</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <a href="#">Email</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <a href="/privacy-policy/">BetUS Privacy Policy</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <a href="/terms-conditions/">Terms &amp; Conditions</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <a href="/terms-conditions/">Sportsbook Sitemap</a>
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="footer_bottom_section flex flex-col md:flex-row justify-between items-center py-3 md:py-10 border-b border-slate-600"
+        >
+          <div
+            class="link-group flex justify-between items-center w-80 md:w-1/4 py-3 md:py-0"
+          >
+            <p class="text-[#AFB9CB] text-sm">
+              <a class="" href="#">Terms of Service</a>
+            </p>
+            <p class="text-[#AFB9CB] text-sm">
+              <a class="" href="/sportsbook/nfl/">Privacy Policy</a>
+            </p>
+            <p class="text-[#AFB9CB] text-sm">
+              <a class="" href="/sportsbook/ncaaf/">Refund Policy</a>
+            </p>
+          </div>
+
+          <div
+            class="w-full md:w-1/2 text-center text-sm text-[#AFB9CB] pb-3 md:pb-0"
+          >
+            <p>IF YOU HAVE A GAMBLING PROBLEM, CALL 1-800-GAMBLER</p>
+          </div>
+
+          <div class="w-full md:w-1/6 text-right pb-3">
+            <img
+              class="mx-auto md:ml-auto"
+              src="./assets/src/images/betus-logo-footer.png"
+              alt="betus logo footer"
+            />
+          </div>
+        </div>
+
+        <div
+          class="font-nexalight text-[#8E9AB0] py-10 text-center text-[10px]"
+        >
+          <p>
+            © 1994 - 2022 BetUS.. All Rights Reserved The BetUS Brand and Logo
+            are trademarks of BetUS. BetUS is a premier online sportsbook and
+            gambling destination. BetUS is a fully licensed sportsbook providing
+            a reliable and secure sports betting service to millions of
+            satisfied online betting customers world wide since 1994. BetUS
+            offers football betting, live and NFL odds all season long.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

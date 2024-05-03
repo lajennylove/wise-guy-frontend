@@ -208,6 +208,12 @@ video slider home page
   }
 }
 
+@media (max-width: 991px) {
+  .swiper-scrollbar {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .video_container .swiper-slide img {
     height: 70%;
@@ -231,5 +237,5 @@ video slider home page
 }
 
 /**
-Basic Swiper home page css
+Select arrow css
 **/

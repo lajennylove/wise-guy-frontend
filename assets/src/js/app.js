@@ -63,15 +63,30 @@ domReady(() => {
     },
 
     breakpoints: {
+      300: {
+        slidesPerView: 1.25,
+      },
+
       460: {
-        slidesPerView: 2.5,
+        slidesPerView: 1.75,
+      },
+
+      600: {
+        slidesPerView: 2.25,
       },
 
       768: {
+        slidesPerView: 2.5,
+      },
+      991: {
         slidesPerView: 3.5,
       },
-      1024: {
+      1200: {
         slidesPerView: 4.5,
+      },
+
+      1500: {
+        slidesPerView: 5.5,
       },
     },
   });
@@ -90,13 +105,31 @@ domReady(() => {
     slidesPerView: 1.5,
     spaceBetween: 10,
     breakpoints: {
-      769: {
+      420: {
+        slidesPerView: 2,
+      },
+
+      480: {
+        slidesPerView: 2.5,
+      },
+
+      620: {
         slidesPerView: 3,
       },
+
+      880: {
+        slidesPerView: 3.5,
+      },
+
       1024: {
         slidesPerView: 4,
       },
+
       1200: {
+        slidesPerView: 4.5,
+      },
+
+      1320: {
         slidesPerView: 5,
       },
     },
@@ -114,13 +147,23 @@ domReady(() => {
     slidesPerView: 2.5,
     spaceBetween: 10,
     breakpoints: {
-      769: {
+      400: {
         slidesPerView: 3,
       },
-      1024: {
-        slidesPerView: 4,
+
+      540: {
+        slidesPerView: 3.5,
       },
-      1400: {
+
+      640: {
+        slidesPerView: 4.5,
+      },
+
+      768: {
+        slidesPerView: 3.5,
+      },
+
+      1024: {
         slidesPerView: 5,
       },
     },

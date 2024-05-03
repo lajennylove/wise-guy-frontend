@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite Tailwind Vanilla Boilerplate</title>
+
+    <!-- REQUIRED // Load js and css files -->
+    <script type="module" src="/main.js"></script>
+
+    <!-- NOT REQUIRED // Alpine.js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="post_container px-2 2xl:px-0">
+      <header
+        class="header_container px-3 max-w-[1430px] mx-auto border-b border-gray-400 2xl:px-0"
+      >
+        <div class="banner_top flex justify-between items-center py-4">
+          <p
+            class="title w-24 sm:w-52 font-ubuntuBold font-bold text-sm md:text-xl"
+          >
+            The Wise Guy
+          </p>
+
+          <div
+            class="play_btn w-28 sm:w-40 font-nexabold font-black text-xs md:text-lg"
+          >
+            <a
+              href="#"
+              class="block w-full text-black border border-white text-center rounded-full shadow-3xl bg-yellow-400 py-2 px-3 font-nexaheavy font-black"
+              >Play Casino</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <!--Breadcrumbs-->
+
+      <div
+        class="breadcrumbs font-roboto text-xs font-normalleading-6 px-3 max-w-[1430px] mx-auto pt-4 pb-6 md:text-base 2xl:px-0"
+      >
+        <a href="#" class="text-blue-600">Casino</a>
+        <span>&gt;</span>
+        <a href="#" class="text-blue-600">The Wise Guy</a>
+        <span>&gt;</span>
+        <a href="#">The Basics of Baccarat</a>
+      </div>
+
+      <!--Page content starts-->
+
+      <div class="main_container max-w-[1430px] mx-auto">
+        <div class="max-w-[1130px] ml-auto">
+          <div class="blocks flex gap-5 xl:gap-14">
+            <div
+              class="content_block flex-auto w-full max-w-[710px] mx-auto md:w-1/2"
+            >
+              <div class="post_header">
+                <h1
+                  class="post_title font-ubuntuRegular text-[32px] text-neutral-800 leading-[38px] md:text-[41px] md:leading-[45px]"
+                >
+                  <span class="block font-light">Strategy </span>
+                  <span class="block font-bold"
+                    >Don’t Be The First Player to Limp</span
+                  >
+                </h1>
+                <p
+                  class="post_subtitle font-nexaregular font-normal text-xl text-slate-600 mb-8 mt-5 md:text-2xl"
+                >
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam
+                </p>
+
+                <div
+                  class="post_meta_container flex items-center flex-wrap lg:flex-nowrap mb-6 font-roboto font-normal"
+                >
+                  <div
+                    class="post_meta_author flex items-center w-full md:w-52"
+                  >
+                    <img
+                      src="/assets/src/images/author.png"
+                      alt="post author image"
+                    />
+                    <a href="#" class="post_author_name ml-4 text-lg"
+                      >Alfonso Gonzalez</a
+                    >
+                  </div>
+                  <div class="post_meta_date mr-6 flex items-center">
+                    <span class="mr-4 text-grey-50 hidden md:block h-8">
+                      . </span
+                    ><a href="#" class="text-base text-grey-50">
+                      Jun 22 - 22 min read </a
+                    ><span class="ml-4 text-grey-50 block h-8"> . </span>
+                  </div>
+                  <div class="post_meta_likes flex items-center">
+                    <img src="/assets/src/images/like_blue.png" alt="" /><span
+                      class="ml-2"
+                      >19</span
+                    >
+                  </div>
+                </div>
+                <div class="post_social_links flex mt-4 gap-2.5">
+                  <a href="#"
+                    ><img src="/assets/src/images/twitter.png" alt="icon"
+                  /></a>
+                  <a href="#"
+                    ><img src="/assets/src/images/linkedin.png" alt="icon"
+                  /></a>
+                  <a href="#"
+                    ><img src="/assets/src/images/facebook.png" alt="icon"
+                  /></a>
+                  <a href="#"
+                    ><img src="/assets/src/images/copy_link.png" alt="icon"
+                  /></a>
+                </div>
+
+                <div class="border_block my-12">
+                  <div class="w-full h-[474px]">
+                    <img
+                      class="w-full h-full object-cover"
+                      src="/assets/src/images/ft_image.png"
+                      alt="feature image"
+                    />
+                  </div>
+
+                  <div class="mt-12">
+                    <h1
+                      class="text-gray-800 font-nexaheavy text-2xl font-black leading-7 md:text-[32px] md:leading-[38px]"
+                    >
+                      Guesstimate the risks on your starting hand.
+                    </h1>
+
+                    <p
+                      class="text-neutral-800 font-roboto font-normal text-lg leading-7 mt-6"
+                    >
+                      card game played at Casinos throughout the world. It is
+                      particularly popular in Macau where "Punto Banco" Baccarat
+                      accounts for around 90% of income from casinos. Masters
+                      Games supplies different variations of the rules,
+                      including historical Baccarat rules described by Seymour
+                      in 1897 and modern Chemin de Fer and Punto Banco.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="twitter_block flex-auto w-1/4 max-w-64 mt-80 hidden md:block"
+            >
+              <img src="/assets/src/images/twitter_group.png" alt="twitter" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Social Media Icons-->
+
+      <div
+        class="post_social_links max-w-[710px] mx-auto flex mt-4 gap-2.5 mb-11"
+      >
+        <a href="#"><img src="/assets/src/images/twitter.png" alt="icon" /></a>
+        <a href="#"><img src="/assets/src/images/linkedin.png" alt="icon" /></a>
+        <a href="#"><img src="/assets/src/images/facebook.png" alt="icon" /></a>
+        <a href="#"
+          ><img src="/assets/src/images/copy_link.png" alt="icon"
+        /></a>
+      </div>
+
+      <!--Tags container-->
+      <div class="related_tags_container mb-8 max-w-[710px] mx-auto">
+        <h4 class="font-nexaheavy text-xl mb-5">Related Tags</h4>
+        <div class="related_tags flex gap-3 flex-wrap">
+          <a
+            href="#"
+            class="block bg-slate-200 px-2 py-1 rounded text-gray-800 font-nexabold"
+            >Poker</a
+          >
+          <a
+            href="#"
+            class="block bg-slate-200 px-2 py-1 rounded text-gray-800 font-nexabold"
+            >Casino</a
+          >
+          <a
+            href="#"
+            class="block bg-slate-200 px-2 py-1 rounded text-gray-800 font-nexabold"
+            >Adding Betting</a
+          >
+          <a
+            href="#"
+            class="block bg-slate-200 px-2 py-1 rounded text-gray-800 font-nexabold"
+            >Poker</a
+          >
+          <a
+            href="#"
+            class="block bg-slate-200 px-2 py-1 rounded text-gray-800 font-nexabold"
+            >Casino</a
+          >
+          <a
+            href="#"
+            class="block bg-slate-200 px-2 py-1 rounded text-gray-800 font-nexabold"
+            >Adding Betting</a
+          >
+          <a
+            href="#"
+            class="block bg-slate-200 px-2 py-1 rounded text-gray-800 font-nexabold"
+            >Poker</a
+          >
+        </div>
+      </div>
+
+      <!--Like unlike container-->
+      <div class="mt-12 border-b border-slate-200 max-w-[710px] mx-auto pb-4">
+        <h5 class="text-center font-nexabold text-xl mb-4">
+          Did you find this article interesting?
+        </h5>
+        <div
+          class="like_dislike_buttons flex justify-between items-center w-36 mx-auto h-12"
+        >
+          <a
+            data-postid="344310"
+            class="like_button like-ID-344310 flex items-center bg-slate-100 px-4 py-2 rounded-full cursor-pointer"
+          >
+            <svg
+              class="like-dislike-icon"
+              width="25"
+              height="25"
+              viewBox="0 0 17 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.94287 13.6117V6.54298C5.94287 6.26468 6.02787 5.99334 6.1837 5.76375L8.11745 2.93903C8.42204 2.4868 9.17995 2.16676 9.82454 2.40331C10.5187 2.63291 10.9791 3.39822 10.8304 4.08005L10.462 6.35513C10.4337 6.56385 10.4904 6.7517 10.6108 6.89781C10.7312 7.03 10.9083 7.11349 11.0995 7.11349H14.0108C14.5704 7.11349 15.052 7.33612 15.3354 7.72574C15.6045 8.10144 15.6541 8.58846 15.477 9.08244L13.7345 14.2935C13.515 15.1563 12.5587 15.859 11.6095 15.859H8.84704C8.37245 15.859 7.70662 15.6989 7.40204 15.3998L6.49537 14.711C6.14829 14.4536 5.94287 14.0431 5.94287 13.6117Z"
+                fill="#007BFF"
+              ></path>
+              <path
+                d="M3.69025 5.18555H2.96067C1.86275 5.18555 1.4165 5.60299 1.4165 6.63269V13.6319C1.4165 14.6616 1.86275 15.079 2.96067 15.079H3.69025C4.78817 15.079 5.23442 14.6616 5.23442 13.6319V6.63269C5.23442 5.60299 4.78817 5.18555 3.69025 5.18555Z"
+                fill="#007BFF"
+              ></path>
+            </svg>
+            <span class="likes-counter"> 74 </span>
+          </a>
+          <a
+            data-postid="344310"
+            class="dislike_button bg-slate-100 px-4 py-2 rounded-full cursor-pointer"
+          >
+            <svg
+              class="like-dislike-icon"
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.11 5.82375V15.9837C16.11 16.3837 15.99 16.7738 15.77 17.1038L13.04 21.1637C12.61 21.8137 11.54 22.2738 10.63 21.9338C9.65002 21.6038 9.00002 20.5037 9.21002 19.5238L9.73002 16.2537C9.77002 15.9537 9.69002 15.6837 9.52002 15.4737C9.35002 15.2837 9.10002 15.1637 8.83002 15.1637H4.72002C3.93002 15.1637 3.25002 14.8438 2.85002 14.2838C2.47002 13.7438 2.40002 13.0437 2.65002 12.3337L5.11002 4.84375C5.42002 3.60375 6.77002 2.59375 8.11002 2.59375H12.01C12.68 2.59375 13.62 2.82375 14.05 3.25375L15.33 4.24375C15.82 4.62375 16.11 5.20375 16.11 5.82375Z"
+                fill="#707D95"
+              ></path>
+              <path
+                d="M19.2904 17.9346H20.3204C21.8704 17.9346 22.5004 17.3346 22.5004 15.8546V5.80461C22.5004 4.32461 21.8704 3.72461 20.3204 3.72461H19.2904C17.7404 3.72461 17.1104 4.32461 17.1104 5.80461V15.8646C17.1104 17.3346 17.7404 17.9346 19.2904 17.9346Z"
+                fill="#707D95"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!--commnet Section-->
+      <div class="comment_form_block mt-12 max-w-[710px] mx-auto">
+        <div class="comments-container mb-9">
+          <h4
+            id="comment-title"
+            class="comments-title font-roboto text-[18px] font-semibold mb-2"
+          >
+            Comments
+            <span id="commentsCount">(0)</span>
+          </h4>
+          <form id="formComment">
+            <textarea
+              id="comment"
+              class="w-full border rounded-[8px] border-gray-800 px-[14px] py-[10px]"
+              placeholder="Add a comment..."
+              name="comment"
+              rows="4"
+            ></textarea>
+            <input
+              id="comment-author"
+              type="text"
+              class="w-full border rounded-[8px] border-gray-800 px-[14px] py-[10px]"
+              placeholder="Name"
+            />
+            <input
+              id="comment-email"
+              type="text"
+              class="w-full border rounded-[8px] border-gray-800 px-[14px] py-[10px] my-2"
+              placeholder="Email"
+            />
+            <div id="current-author-container" class="hidden">
+              <p id="current-author" class="my-2"></p>
+              <p>
+                <a
+                  id="change-user"
+                  class="text-[16px] text-lightblack-200 font-semibold"
+                  href="javascript:void(0)"
+                  >Not you?</a
+                >
+              </p>
+            </div>
+            <div
+              class="g-recaptcha"
+              data-sitekey="6LeiyrAoAAAAAI1r1ZKJ4nFl_HzQq3DMdq7_FgJG"
+            ></div>
+            <p id="comment-alert" class="text-red-700 mt-2"></p>
+            <p id="comment-info" class="text-[16px] mt-2"></p>
+            <button
+              id="sendComment"
+              type="submit"
+              disabled=""
+              class="text-slate-400 font-bold font-nexaheavy bg-slate-200 py-[15px] px-[50px] text-[20px] rounded-[50px] mt-2"
+            >
+              Comment
+            </button>
+          </form>
+          <div class="comments-box mt-8"></div>
+        </div>
+
+        <div class="users_comments_section">
+          <div class="flex flex-col gap-6 border-t border-slate-200 pt-6">
+            <div
+              class="single_comment font-roboto text-base flex gap-4 border-b border-slate-200 pb-6"
+            >
+              <div class="image">
+                <img src="/assets/src/images/user.png" alt="" />
+              </div>
+              <div class="info">
+                <div class="flex gap-4">
+                  <p class="name text-neutral-800 font-semibold">Eve Moore</p>
+                  <p class="text-slate-600">6 days ago</p>
+                </div>
+                <p class="text-neutral-800 mt-2">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium?
+                </p>
+                <div class="text-slate-600 text-sm flex gap-8 mt-2">
+                  <p class="like flex gap-2 items-center">
+                    <img
+                      src="/assets/src/images/like_comment.png"
+                      alt="like image"
+                    /><span>4</span>
+                  </p>
+                  <p>Reply</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="single_comment font-roboto text-base flex gap-4 border-b border-slate-200 pb-6"
+            >
+              <div class="image">
+                <img src="/assets/src/images/user.png" alt="" />
+              </div>
+              <div class="info">
+                <div class="flex gap-4">
+                  <p class="name text-neutral-800 font-semibold">Eve Moore</p>
+                  <p class="text-slate-600">6 days ago</p>
+                </div>
+                <p class="text-neutral-800 mt-2">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium?
+                </p>
+                <div class="text-slate-600 text-sm flex gap-8 mt-2">
+                  <p class="like flex gap-2 items-center">
+                    <img
+                      src="/assets/src/images/like_comment.png"
+                      alt="like image"
+                    /><span>4</span>
+                  </p>
+                  <p>Reply</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="show_more_btn w-36 mx-auto my-12">
+            <a
+              href="#"
+              class="block border border-slate-400 text-center rounded-full py-2 text-gray-800 font-nexaheavy font-black text-lg"
+              >Show More</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!--Suggestion Section-->
+
+      <div class="suggestion_container mt-12 max-w-[710px] mx-auto">
+        <div class="suggestions_block">
+          <h3 class="font-nexaheavy font-black text-lg text-neutral-800">
+            Suggestions
+          </h3>
+          <div
+            class="suggestions my-8 font-roboto text-base leading-normal flex flex-col gap-4"
+          >
+            <div
+              class="user_suggestion max-w-[650px] px-7 py-5 bg-white rounded-[20px] shadow-4xl"
+            >
+              <p>
+                Select a "banker" if it is not a cash game. That person will
+                issue and keep the supply of chips under lock and key.
+              </p>
+            </div>
+            <div
+              class="user_suggestion max-w-[650px] px-7 py-5 bg-white rounded-[20px] shadow-4xl"
+            >
+              <p>
+                Select a "banker" if it is not a cash game. That person will
+                issue and keep the supply of chips under lock and key.
+              </p>
+            </div>
+            <div
+              class="user_suggestion max-w-[650px] px-7 py-5 bg-white rounded-[20px] shadow-4xl"
+            >
+              <p>
+                Select a "banker" if it is not a cash game. That person will
+                issue and keep the supply of chips under lock and key.
+              </p>
+            </div>
+            <div
+              class="user_suggestion max-w-[650px] px-7 py-5 bg-white rounded-[20px] shadow-4xl"
+            >
+              <p>
+                Select a "banker" if it is not a cash game. That person will
+                issue and keep the supply of chips under lock and key.
+              </p>
+            </div>
+          </div>
+
+          <div class="submit_suggestion_block max-w-[650px]">
+            <h3 class="font-nexabold font-bold text-lg text-slate-500 mb-2">
+              Submit your Suggestion
+            </h3>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Write your suggestion here"
+              class="block w-full font-montserrat text-sm text-stone-300 font-medium rounded-[30px] border border-gray-200 py-3 px-4 outline-none"
+            />
+
+            <button
+              class="block mt-4 w-36 text-center text-white font-nexaheavy font-black text-xl bg-blue-600 rounded-full py-3"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!--Promo Container-->
+
+      <div
+        class="promo_container flex justify-center items-center bg-slate-50 h-80 my-6"
+      >
+        <div class="promo font-nexaregular text-slate-500 text-xl">ADV</div>
+      </div>
+    </div>
+    <!--footer-->
+    <!--Page footer Starts-->
+    <footer
+      class="main_footer px-6 xl:px-0 font-nexabold font-bold relative top-20 bg-neutral-800"
+    >
+      <div class="main_footer mx-auto max-w-7xl">
+        <div
+          class="footer_head_section flex justify-between items-center py-8 border-b border-slate-600"
+        >
+          <div
+            class="footer_social_links flex justify-between items-center w-[80%] md:w-60"
+          >
+            <a href="#"
+              ><img
+                src="./assets/src/images/facebook_footer.png"
+                alt="facebook icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/src/images/instagram.png"
+                alt="instagram icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/src/images/twitter_footer.png"
+                alt="twitter icon"
+            /></a>
+            <a href="#"
+              ><img src="./assets/src/images/shape.png" alt="instagram icon"
+            /></a>
+            <a href="#"
+              ><img src="./assets/src/images/youtube.png" alt="youtube icon"
+            /></a>
+          </div>
+
+          <div class="footer_up_page">
+            <a href=""
+              ><img src="./assets/src/images/top.png" alt="up arrow"
+            /></a>
+          </div>
+        </div>
+
+        <div
+          class="footer_main_section flex flex-wrap justify-between text-white py-10 border-b border-slate-600"
+        >
+          <div class="link-group text-white w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Sportsbook
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/">Online Sportsbook</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/nfl/">NFL Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/ncaaf/">NCAAF Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/nba/">NBA Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/baseball/mlb/">MLB Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/mlb-world-series/">World Series Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/ice-hockey/nhl/">NHL Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/ncaab-college-basketball/">NCAAB Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/uefa-champions-league/"
+                >UEFA Champions League Odds</a
+              >
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/nascar/">Nascar Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/olympic-games/">Olympic Games Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/tennis-french-open/">French Open Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/live-betting/">Live Betting</a>
+            </p>
+          </div>
+
+          <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Casino
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/online-casino/">Online Casino Games</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/online-casino/tournaments/">Tournaments</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/bonuses/">Bonus Play</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/online-casino/blackjack/">Play Blackjack</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/online-casino/slots/">Online Slots</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/casino-guide/">Casino Guide</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/casino-guide/how-to-play-blackjack/"
+                >How to Play Blackjack</a
+              >
+            </p>
+          </div>
+
+          <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Racing
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/racebook/">Racebook</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/sportsbook/horse-racing/">Horse Racing Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/rules/racebook/horse-racing/">Horse Racing Rules</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/help/racebook/glossary/">Racebook Glossary</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/horse-racing/">Horse Race Betting</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/odds/pegasus-world-cup/">Pegasus World Cup</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/sports-betting/horse-racing/triple-crown/"
+                >Triple Crown Betting</a
+              >
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/sports-betting/horse-racing/news/">Horse Racing News</a>
+            </p>
+          </div>
+
+          <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Information
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/sports-betting/">Sports Betting News</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/betus-sportsbook-reviews/">BetUS Sportsbook Reviews</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/how-to-bet-online/">How to Bet Online</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/sports-betting-guide/">How to Bet On Sports</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/about-us/">About Us</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/rules/">Rules &amp; Regulations</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/help/">Help &amp; FAQ</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/press/">Press Room</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/odds/">Sporting Events Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a
+                href="https://revmasters.com/"
+                title="Affiliates - opens in a new window"
+                target="_blank"
+                >Affiliates</a
+              >
+            </p>
+          </div>
+
+          <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Betting Offers
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/bonuses/">Bonuses</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/online-casino/promotions/">Casino Promotions</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/contests/">Contests</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/promotions/welcome-bonus/">Sign Up Bonus</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/promotions/crypto-sign-up-bonus/">Crypto Bonus</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/promotions/casino-sign-up-bonus/">Casino Bonus</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="https://www.betus.com.pa/refer-a-friend-300/"
+                >Refer a Friend</a
+              >
+            </p>
+          </div>
+
+          <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Other
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <a class="" href="/join/benefits/">Why Join?</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <a href="/contact/">Contact Us</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <a href="tel:1(800)792-3887">1(800)792-3887</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <a href="#">Email</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <a href="/privacy-policy/">BetUS Privacy Policy</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <a href="/terms-conditions/">Terms &amp; Conditions</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <a href="/terms-conditions/">Sportsbook Sitemap</a>
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="footer_bottom_section flex flex-col md:flex-row justify-between items-center py-3 md:py-10 border-b border-slate-600"
+        >
+          <div
+            class="link-group flex justify-between items-center w-80 md:w-1/4 py-3 md:py-0"
+          >
+            <p class="text-[#AFB9CB] text-sm">
+              <a class="" href="#">Terms of Service</a>
+            </p>
+            <p class="text-[#AFB9CB] text-sm">
+              <a class="" href="/sportsbook/nfl/">Privacy Policy</a>
+            </p>
+            <p class="text-[#AFB9CB] text-sm">
+              <a class="" href="/sportsbook/ncaaf/">Refund Policy</a>
+            </p>
+          </div>
+
+          <div
+            class="w-full md:w-1/2 text-center text-sm text-[#AFB9CB] pb-3 md:pb-0"
+          >
+            <p>IF YOU HAVE A GAMBLING PROBLEM, CALL 1-800-GAMBLER</p>
+          </div>
+
+          <div class="w-full md:w-1/6 text-right pb-3">
+            <img
+              class="mx-auto md:ml-auto"
+              src="./assets/src/images/betus-logo-footer.png"
+              alt="betus logo footer"
+            />
+          </div>
+        </div>
+
+        <div
+          class="font-nexalight text-[#8E9AB0] py-10 text-center text-[10px]"
+        >
+          <p>
+            © 1994 - 2022 BetUS.. All Rights Reserved The BetUS Brand and Logo
+            are trademarks of BetUS. BetUS is a premier online sportsbook and
+            gambling destination. BetUS is a fully licensed sportsbook providing
+            a reliable and secure sports betting service to millions of
+            satisfied online betting customers world wide since 1994. BetUS
+            offers football betting, live and NFL odds all season long.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

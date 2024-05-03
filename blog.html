@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite Tailwind Vanilla Boilerplate</title>
+
+    <!-- REQUIRED // Load js and css files -->
+    <script type="module" src="/main.js"></script>
+
+    <!-- NOT REQUIRED // Alpine.js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="bg-neutral-900 text-white">
+    <div class="page_container">
+      <header
+        class="header_container text-white px-3 max-w-[1430px] mx-auto 2xl:px-0"
+      >
+        <div class="banner_top flex justify-between items-center py-4">
+          <div class="flex items-center gap-2 sm:gap-6">
+            <a
+              href="#"
+              class="font-nexaheavy text-sm font-black leading-[18px] w-24 text-center flex items-center gap-2 px-3 py-1 border border-white rounded-lg"
+              ><span class="block h-[12px] w-[12px]"
+                ><img src="/assets/src/images/back-arrow.png" alt="back arrow"
+              /></span>
+              <span class="block">Home</span></a
+            >
+            <p
+              class="title w-24 sm:w-52 font-ubuntuBold font-bold text-sm md:text-xl"
+            >
+              The Wise Guy
+            </p>
+          </div>
+          <div
+            class="play_btn w-28 sm:w-40 font-nexabold font-black text-xs md:text-lg"
+          >
+            <a
+              href="#"
+              class="block w-full text-black border border-white text-center rounded-full shadow-3xl bg-yellow-400 py-2 px-3 font-nexaheavy font-black"
+              >Play Casino</a
+            >
+          </div>
+        </div>
+      </header>
+      <!--Banner-->
+      <div
+        class="relative bg-cover bg-no-repeat bg-center h-52 rounded-xl max-w-[1430px] mx-auto"
+      >
+        <div class="flex h-full items-center justify-center font-ubuntuRegular">
+          <div class="px-6 text-center text-white md:px-12">
+            <div class="w-24 h-24 mx-auto relative -bottom-5 -z-10">
+              <img
+                class="w-full"
+                src="/assets/src/images/daimond.png"
+                alt="image"
+              />
+            </div>
+
+            <h1 class="font-bold text-2xl leading-normal md:text-[56px]">
+              Blog
+            </h1>
+            <p
+              class="font-ubuntuLight font-light text-lg leading-normal text-slate-100 md:text-3xl"
+            >
+              Archive
+            </p>
+
+            <p class="mt-3 font-normal text-white opacity-40 text-base">
+              Here you can find the full strategies collection, enjoy!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--Popular Block-->
+      <div class="popular_block_outer relative">
+        <div
+          class="popular_block_container mt-24 px-3 max-w-[1430px] mx-auto 2xl:px-0"
+        >
+          <div class="startegies_container">
+            <div class="header_popular flex justify-between items-center mb-6">
+              <div class="flex items-center gap-2 font-roboto">
+                <p class="text-[10px]">Filter by:</p>
+                <div class="min-w-20 sm:min-w-52">
+                  <select
+                    class="form-select font-bold text-sm block bg-black border border-gray-700 outline outline-0 rounded-full w-full px-3 py-3"
+                  >
+                    <option value="baccarat">Baccarat</option>
+                    <option value="game 1">Game 1</option>
+                    <option value="game 2">Game 2</option>
+                    <option value="game 3">Game 3</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-2 font-roboto">
+                <p class="text-[10px]">Sort by:</p>
+                <div class="min-w-20 sm:min-w-52">
+                  <select
+                    class="form-select font-bold text-sm block bg-black border border-gray-700 outline outline-0 rounded-full w-full px-3 py-3"
+                  >
+                    <option value="baccarat">Name A-Z</option>
+                    <option value="game 1">Name A</option>
+                    <option value="game 2">Name B</option>
+                    <option value="game 3">Name C</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div
+              class="blocks_container grid grid-cols-1 gap-y-10 md:gap-x-2.5 md:grid-cols-2 lg:grid-cols-3"
+            >
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_1.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    How Slot Machines Work
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_2.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    What You Need to Know Before You Start with Online Casino
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_3.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    Start with a fixed amount of money you’re ready to lose
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_4.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    How to Pick the Right Games to Play
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_5.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    How To Sign Up for Rewards Cards
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_6.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    How To Move on to Roulette
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_1.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    How Slot Machines Work
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_2.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    What You Need to Know Before You Start with Online Casino
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_3.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    Start with a fixed amount of money you’re ready to lose
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_4.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    How to Pick the Right Games to Play
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_5.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    How To Sign Up for Rewards Cards
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_6.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    How To Move on to Roulette
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_1.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    How Slot Machines Work
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_2.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    What You Need to Know Before You Start with Online Casino
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_3.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    Start with a fixed amount of money you’re ready to lose
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_4.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    How to Pick the Right Games to Play
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_5.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    How To Sign Up for Rewards Cards
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_block">
+                <div class="max-w-[470px] h-[291px] rounded-lg overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/assets/src/images/popular_6.png"
+                    alt="popular image"
+                  />
+                </div>
+                <div class="content mt-5">
+                  <p class="font-nexabold font-bold text-lg leading-6">
+                    How To Move on to Roulette
+                  </p>
+                  <div class="block md:hidden">
+                    <p
+                      class="opacity-50 font-roboto text-base font-normal line-clamp-2 leading-6 mt-2"
+                    >
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores eos
+                      qui ratione voluptatem sequi nesciunt.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="post_meta_date text-slate-300 flex items-center"
+                    >
+                      <span class="font-roboto font-normal leading-4 text-sm">
+                        <time class="dt-published"> Apr 24 </time>
+                        - 12 minutes read
+                      </span>
+                    </div>
+                    <div
+                      class="text-xs font-nexabold text-zinc-300 font-bold flex items-center gap-2 mt-2"
+                    >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Full</a
+                      >
+                      <a
+                        href="#"
+                        class="block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Bidding</a
+                      >
+                      <a
+                        href="#"
+                        class="hidden md:block border border-gray-800 rounded-full px-4 py-1.5"
+                        >Fold</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card_image w-48 h-56 absolute top-0 left-0 -z-10 hidden lg:block"
+        >
+          <img src="./assets/src/images/card_1.png" alt="image" />
+        </div>
+
+        <div
+          class="card_image w-48 h-56 absolute top-1/4 left-0 -z-10 hidden lg:block"
+        >
+          <img src="./assets/src/images/s_1.png" alt="image" />
+        </div>
+        <div
+          class="card_image w-48 h-56 absolute top-1/2 left-0 -z-10 hidden lg:block"
+        >
+          <img src="./assets/src/images/dice_2.png" alt="image" />
+        </div>
+        <div
+          class="card_image w-24 h-56 ml-auto absolute right-0 top-40 -z-10 hidden lg:block"
+        >
+          <img src="./assets/src/images/dice_1.png" alt="image" />
+        </div>
+
+        <div
+          class="card_image w-24 h-56 absolute top-1/3 right-10 -z-10 hidden lg:block"
+        >
+          <img src="./assets/src/images/roll_2.png" alt="image" />
+        </div>
+
+        <div
+          class="card_image w-48 h-56 absolute top-2/3 right-0 -z-10 hidden lg:block"
+        >
+          <img src="./assets/src/images/card_5.png" alt="image" />
+        </div>
+      </div>
+
+      <!--Featured Games Block-->
+      <div class="featured_container_outer">
+        <div
+          class="basic_container mt-10 max-w-[1430px] mx-auto px-3 2xl:px-0 md:mt-24"
+        >
+          <div class="header_strategies flex justify-between items-center mb-6">
+            <h2 class="font-ubuntuBold font-bold text-xl w-1/2 md:text-4xl">
+              Featured Games
+            </h2>
+            <a
+              href="#"
+              class="hidden font-nexaheavy font-black leading-6 text-center border border-white rounded-full w-44 py-2 md:block"
+              >View More</a
+            >
+          </div>
+          <div class="swiper featuredSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bg-zinc-900 rounded-lg overflow-hidden">
+                  <img
+                    class="w-[165px] h-[240px] object-cover md:w-[278px] md:h-[405px]"
+                    src="/assets/src/images/feature_game_1.png"
+                    alt=""
+                  />
+                  <div class="content py-2 flex items-center">
+                    <div class="max-w-60">
+                      <p
+                        class="font-roboto font-normal leading-5 text-sm line-clamp-1 md:text-xl"
+                      >
+                        Casino Game Long Name Example
+                      </p>
+                      <p class="font-roboto opacity-50 text-xs md:text-sm">
+                        Provider
+                      </p>
+                    </div>
+                    <div class="info_icon w-5 h-5 hidden md:block">
+                      <img
+                        class="w-full object-contain"
+                        src="/assets/src/images/info.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div
+                      class="heart_img w-[25px] h-[30px] absolute top-0 right-0 md:w-[50px] md:h-[60px]"
+                    >
+                      <img
+                        src="/assets/src/images/yellow_heart.png"
+                        alt="heart image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-zinc-900 rounded-lg overflow-hidden">
+                  <img
+                    class="w-[165px] h-[240px] object-cover md:w-[278px] md:h-[405px]"
+                    src="/assets/src/images/feature_game_1.png"
+                    alt=""
+                  />
+                  <div class="content py-2 flex items-center">
+                    <div class="max-w-60">
+                      <p
+                        class="font-roboto font-normal leading-5 text-sm line-clamp-1 md:text-xl"
+                      >
+                        Casino Game Long Name Example
+                      </p>
+                      <p class="font-roboto opacity-50 text-xs md:text-sm">
+                        Provider
+                      </p>
+                    </div>
+                    <div class="info_icon w-5 h-5 hidden md:block">
+                      <img
+                        class="w-full object-contain"
+                        src="/assets/src/images/info.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div
+                      class="heart_img w-[25px] h-[30px] absolute top-0 right-0 md:w-[50px] md:h-[60px]"
+                    >
+                      <img
+                        src="/assets/src/images/yellow_heart.png"
+                        alt="heart image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-zinc-900 rounded-lg overflow-hidden">
+                  <img
+                    class="w-[165px] h-[240px] object-cover md:w-[278px] md:h-[405px]"
+                    src="/assets/src/images/feature_game_1.png"
+                    alt=""
+                  />
+                  <div class="content py-2 flex items-center">
+                    <div class="max-w-60">
+                      <p
+                        class="font-roboto font-normal leading-5 text-sm line-clamp-1 md:text-xl"
+                      >
+                        Casino Game Long Name Example
+                      </p>
+                      <p class="font-roboto opacity-50 text-xs md:text-sm">
+                        Provider
+                      </p>
+                    </div>
+                    <div class="info_icon w-5 h-5 hidden md:block">
+                      <img
+                        class="w-full object-contain"
+                        src="/assets/src/images/info.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div
+                      class="heart_img w-[25px] h-[30px] absolute top-0 right-0 md:w-[50px] md:h-[60px]"
+                    >
+                      <img
+                        src="/assets/src/images/yellow_heart.png"
+                        alt="heart image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-zinc-900 rounded-lg overflow-hidden">
+                  <img
+                    class="w-[165px] h-[240px] object-cover md:w-[278px] md:h-[405px]"
+                    src="/assets/src/images/feature_game_1.png"
+                    alt=""
+                  />
+                  <div class="content py-2 flex items-center">
+                    <div class="max-w-60">
+                      <p
+                        class="font-roboto font-normal leading-5 text-sm line-clamp-1 md:text-xl"
+                      >
+                        Casino Game Long Name Example
+                      </p>
+                      <p class="font-roboto opacity-50 text-xs md:text-sm">
+                        Provider
+                      </p>
+                    </div>
+                    <div class="info_icon w-5 h-5 hidden md:block">
+                      <img
+                        class="w-full object-contain"
+                        src="/assets/src/images/info.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div
+                      class="heart_img w-[25px] h-[30px] absolute top-0 right-0 md:w-[50px] md:h-[60px]"
+                    >
+                      <img
+                        src="/assets/src/images/yellow_heart.png"
+                        alt="heart image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-zinc-900 rounded-lg overflow-hidden">
+                  <img
+                    class="w-[165px] h-[240px] object-cover md:w-[278px] md:h-[405px]"
+                    src="/assets/src/images/feature_game_1.png"
+                    alt=""
+                  />
+                  <div class="content py-2 flex items-center">
+                    <div class="max-w-60">
+                      <p
+                        class="font-roboto font-normal leading-5 text-sm line-clamp-1 md:text-xl"
+                      >
+                        Casino Game Long Name Example
+                      </p>
+                      <p class="font-roboto opacity-50 text-xs md:text-sm">
+                        Provider
+                      </p>
+                    </div>
+                    <div class="info_icon w-5 h-5 hidden md:block">
+                      <img
+                        class="w-full object-contain"
+                        src="/assets/src/images/info.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div
+                      class="heart_img w-[25px] h-[30px] absolute top-0 right-0 md:w-[50px] md:h-[60px]"
+                    >
+                      <img
+                        src="/assets/src/images/yellow_heart.png"
+                        alt="heart image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-zinc-900 rounded-lg overflow-hidden">
+                  <img
+                    class="w-[165px] h-[240px] object-cover md:w-[278px] md:h-[405px]"
+                    src="/assets/src/images/feature_game_1.png"
+                    alt=""
+                  />
+                  <div class="content py-2 flex items-center">
+                    <div class="max-w-60">
+                      <p
+                        class="font-roboto font-normal leading-5 text-sm line-clamp-1 md:text-xl"
+                      >
+                        Casino Game Long Name Example
+                      </p>
+                      <p class="font-roboto opacity-50 text-xs md:text-sm">
+                        Provider
+                      </p>
+                    </div>
+                    <div class="info_icon w-5 h-5 hidden md:block">
+                      <img
+                        class="w-full object-contain"
+                        src="/assets/src/images/info.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div
+                      class="heart_img w-[25px] h-[30px] absolute top-0 right-0 md:w-[50px] md:h-[60px]"
+                    >
+                      <img
+                        src="/assets/src/images/yellow_heart.png"
+                        alt="heart image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-zinc-900 rounded-lg overflow-hidden">
+                  <img
+                    class="w-[165px] h-[240px] object-cover md:w-[278px] md:h-[405px]"
+                    src="/assets/src/images/feature_game_1.png"
+                    alt=""
+                  />
+                  <div class="content py-2 flex items-center">
+                    <div class="max-w-60">
+                      <p
+                        class="font-roboto font-normal leading-5 text-sm line-clamp-1 md:text-xl"
+                      >
+                        Casino Game Long Name Example
+                      </p>
+                      <p class="font-roboto opacity-50 text-xs md:text-sm">
+                        Provider
+                      </p>
+                    </div>
+                    <div class="info_icon w-5 h-5 hidden md:block">
+                      <img
+                        class="w-full object-contain"
+                        src="/assets/src/images/info.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div
+                      class="heart_img w-[25px] h-[30px] absolute top-0 right-0 md:w-[50px] md:h-[60px]"
+                    >
+                      <img
+                        src="/assets/src/images/yellow_heart.png"
+                        alt="heart image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- buttons -->
+            <div class="swiper-button-next">
+              <img src="/assets/src/images/next_icon.png" alt="next icon" />
+            </div>
+            <div class="swiper-button-prev rotate-180">
+              <img src="/assets/src/images/next_icon.png" alt="previous icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Promo Container-->
+      <div
+        class="promo_container flex justify-center items-center bg-black h-80 mt-24"
+      >
+        <div class="promo font-nexaregular text-slate-500 text-xl">Promo</div>
+      </div>
+
+      <!--footer-->
+      <!--Page footer Starts-->
+
+      <footer
+        class="main_footer px-6 xl:px-0 font-nexabold font-bold relative top-20"
+      >
+        <div class="main_footer mx-auto max-w-7xl">
+          <div
+            class="footer_head_section flex justify-between items-center py-8 border-b border-[#372D75]"
+          >
+            <div
+              class="footer_social_links flex justify-between items-center w-[80%] md:w-60"
+            >
+              <a href="#"
+                ><img
+                  src="./assets/src/images/facebook.png"
+                  alt="facebook icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./assets/src/images/instagram.png"
+                  alt="instagram icon"
+              /></a>
+              <a href="#"
+                ><img src="./assets/src/images/twitter.png" alt="twitter icon"
+              /></a>
+              <a href="#"
+                ><img src="./assets/src/images/shape.png" alt="instagram icon"
+              /></a>
+              <a href="#"
+                ><img src="./assets/src/images/youtube.png" alt="youtube icon"
+              /></a>
+            </div>
+
+            <div class="footer_up_page">
+              <a href=""
+                ><img src="./assets/src/images/top.png" alt="up arrow"
+              /></a>
+            </div>
+          </div>
+
+          <div
+            class="footer_main_section flex flex-wrap justify-between text-white py-10 border-b border-[#372D75]"
+          >
+            <div class="link-group text-white w-1/2 lg:w-1/3 xl:w-1/6">
+              <h5
+                class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+              >
+                Sportsbook
+              </h5>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a class="" href="/sportsbook/">Online Sportsbook</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a class="" href="/sportsbook/nfl/">NFL Odds</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a class="" href="/sportsbook/ncaaf/">NCAAF Odds</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a class="" href="/sportsbook/nba/">NBA Odds</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a class="" href="/sportsbook/baseball/mlb/">MLB Odds</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a class="" href="/odds/mlb-world-series/">World Series Odds</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a class="" href="/sportsbook/ice-hockey/nhl/">NHL Odds</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a class="" href="/odds/ncaab-college-basketball/"
+                  >NCAAB Odds</a
+                >
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a class="" href="/odds/uefa-champions-league/"
+                  >UEFA Champions League Odds</a
+                >
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a class="" href="/odds/nascar/">Nascar Odds</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a class="" href="/odds/olympic-games/">Olympic Games Odds</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a class="" href="/odds/tennis-french-open/"
+                  >French Open Odds</a
+                >
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a class="" href="/live-betting/">Live Betting</a>
+              </p>
+            </div>
+
+            <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+              <h5
+                class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+              >
+                Casino
+              </h5>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/online-casino/">Online Casino Games</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/online-casino/tournaments/">Tournaments</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/bonuses/">Bonus Play</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/online-casino/blackjack/">Play Blackjack</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/online-casino/slots/">Online Slots</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/casino-guide/">Casino Guide</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/casino-guide/how-to-play-blackjack/"
+                  >How to Play Blackjack</a
+                >
+              </p>
+            </div>
+
+            <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+              <h5
+                class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+              >
+                Racing
+              </h5>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/racebook/">Racebook</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/sportsbook/horse-racing/">Horse Racing Odds</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/rules/racebook/horse-racing/">Horse Racing Rules</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/help/racebook/glossary/">Racebook Glossary</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/horse-racing/">Horse Race Betting</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/odds/pegasus-world-cup/">Pegasus World Cup</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/sports-betting/horse-racing/triple-crown/"
+                  >Triple Crown Betting</a
+                >
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/sports-betting/horse-racing/news/"
+                  >Horse Racing News</a
+                >
+              </p>
+            </div>
+
+            <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+              <h5
+                class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+              >
+                Information
+              </h5>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/sports-betting/">Sports Betting News</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/betus-sportsbook-reviews/"
+                  >BetUS Sportsbook Reviews</a
+                >
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/how-to-bet-online/">How to Bet Online</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/sports-betting-guide/">How to Bet On Sports</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/about-us/">About Us</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/rules/">Rules &amp; Regulations</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/help/">Help &amp; FAQ</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/press/">Press Room</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/odds/">Sporting Events Odds</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a
+                  href="https://revmasters.com/"
+                  title="Affiliates - opens in a new window"
+                  target="_blank"
+                  >Affiliates</a
+                >
+              </p>
+            </div>
+
+            <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+              <h5
+                class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+              >
+                Betting Offers
+              </h5>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/bonuses/">Bonuses</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/online-casino/promotions/">Casino Promotions</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/contests/">Contests</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/promotions/welcome-bonus/">Sign Up Bonus</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/promotions/crypto-sign-up-bonus/">Crypto Bonus</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="/promotions/casino-sign-up-bonus/">Casino Bonus</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+                <a href="https://www.betus.com.pa/refer-a-friend-300/"
+                  >Refer a Friend</a
+                >
+              </p>
+            </div>
+
+            <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+              <h5
+                class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+              >
+                Other
+              </h5>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+                <a class="" href="/join/benefits/">Why Join?</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+                <a href="/contact/">Contact Us</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:1(800)792-3887">1(800)792-3887</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <a href="#">Email</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+                <a href="/privacy-policy/">BetUS Privacy Policy</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+                <a href="/terms-conditions/">Terms &amp; Conditions</a>
+              </p>
+              <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+                <a href="/terms-conditions/">Sportsbook Sitemap</a>
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="footer_bottom_section flex flex-col md:flex-row justify-between items-center py-3 md:py-10 border-b border-[#372D75]"
+          >
+            <div
+              class="link-group flex justify-between items-center w-80 md:w-1/4 py-3 md:py-0"
+            >
+              <p class="text-[#AFB9CB] text-sm">
+                <a class="" href="#">Terms of Service</a>
+              </p>
+              <p class="text-[#AFB9CB] text-sm">
+                <a class="" href="/sportsbook/nfl/">Privacy Policy</a>
+              </p>
+              <p class="text-[#AFB9CB] text-sm">
+                <a class="" href="/sportsbook/ncaaf/">Refund Policy</a>
+              </p>
+            </div>
+
+            <div
+              class="w-full md:w-1/2 text-center text-sm text-[#AFB9CB] pb-3 md:pb-0"
+            >
+              <p>IF YOU HAVE A GAMBLING PROBLEM, CALL 1-800-GAMBLER</p>
+            </div>
+
+            <div class="w-full md:w-1/6 text-right pb-3">
+              <img
+                class="mx-auto md:ml-auto"
+                src="./assets/src/images/betus-logo-footer.png"
+                alt="betus logo footer"
+              />
+            </div>
+          </div>
+
+          <div
+            class="font-nexalight text-[#8E9AB0] py-10 text-center text-[10px]"
+          >
+            <p>
+              © 1994 - 2022 BetUS.. All Rights Reserved The BetUS Brand and Logo
+              are trademarks of BetUS. BetUS is a premier online sportsbook and
+              gambling destination. BetUS is a fully licensed sportsbook
+              providing a reliable and secure sports betting service to millions
+              of satisfied online betting customers world wide since 1994. BetUS
+              offers football betting, live and NFL odds all season long.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
