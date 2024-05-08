@@ -21,6 +21,47 @@ function domReady(fn) {
 domReady(() => {
   console.log("The Dom is ready! 🚀");
 
+  /** Search bar in navigation js */
+  const searchInput = document.getElementById("searchInput");
+  const searchIcon = document.getElementById("searchIcon");
+  const closeIcon = document.getElementById("closeIcon");
+
+  searchIcon.addEventListener("click", function () {
+    closeIcon.style.display = "block";
+    searchIcon.style.display = "none";
+    searchInput.style.display = "block";
+  });
+
+  closeIcon.addEventListener("click", function () {
+    searchIcon.style.display = "block";
+    closeIcon.style.display = "none";
+    searchInput.style.display = "none";
+  });
+
+  /**
+   *
+   * On hover yellow line on navbar
+   */
+
+  // Function to handle mouseover event
+  function handleMouseOver(event) {
+    event.target.classList.remove("nav-bg");
+  }
+
+  // Function to handle mouseout event
+  function handleMouseOut(event) {
+    event.target.classList.add("nav-bg");
+  }
+
+  // Add event listeners to all list items with the class 'nav-bg'
+  const navItems = document.querySelectorAll(".nav-bg");
+  navItems.forEach((item) => {
+    item.addEventListener("mouseover", handleMouseOver);
+    item.addEventListener("mouseout", handleMouseOut);
+  });
+
+  /** logo slider */
+
   if (document.querySelector(".my-slider")) {
     var slider = tns({
       container: ".my-slider",

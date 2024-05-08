@@ -45,7 +45,7 @@
       </header>
       <!--Banner-->
       <div
-        class="relative bg-cover bg-no-repeat bg-center h-52 rounded-xl max-w-[1430px] mx-auto"
+        class="relative bg-cover bg-no-repeat bg-center h-72 rounded-xl max-w-[1430px] mx-auto"
         style="
           background: linear-gradient(
               270deg,
@@ -58,7 +58,9 @@
               no-repeat;
         "
       >
-        <div class="flex h-full items-center justify-center font-ubuntuRegular">
+        <div
+          class="max-w-[724px] mx-auto flex h-full items-center justify-center font-ubuntuRegular py-14"
+        >
           <div class="px-6 text-center text-white md:px-12">
             <h1
               class="font-bold text-2xl leading-6 md:leading-[48px] md:text-[40px]"
@@ -71,6 +73,55 @@
               Casino’s strategies, tutorials, news and more from experts at The
               Wise Guy
             </p>
+
+            <form class="w-full mx-auto font-nexaregular mt-8 md:w-[724px]">
+              <label
+                for="default-search"
+                class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+                >Search</label
+              >
+              <div class="relative">
+                <div
+                  class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+                ></div>
+                <input
+                  type="search"
+                  id="default-search"
+                  class="block w-full text-sm p-4 ps-4 text-white border border-slate-500 bg-neutral-900 outline-none rounded-full"
+                  placeholder="Search for something"
+                  required
+                />
+
+                <button
+                  type="submit"
+                  class="gradient-searchbtn font-nexaheavy font-black capitalize text-black absolute end-2.5 top-1.5 rounded-[200px] flex items-center justify-center gap-2 py-2 px-2 sm:px-8"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                      stroke="#252A32"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M22 22L20 20"
+                      stroke="#252A32"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="hidden sm:block">Search</span>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

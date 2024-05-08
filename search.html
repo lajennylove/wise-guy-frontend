@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite Tailwind Vanilla Boilerplate</title>
+
+    <!-- REQUIRED // Load js and css files -->
+    <script type="module" src="/main.js"></script>
+
+    <!-- NOT REQUIRED // Alpine.js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="post_container max-w-[1430px] mx-auto px-2 2xl:px-0">
+      <header
+        class="header_container px-3 max-w-[1430px] mx-auto border-b border-gray-400 2xl:px-0"
+      >
+        <div class="banner_top flex justify-between items-center py-4">
+          <p
+            class="title w-24 sm:w-52 font-ubuntuBold font-bold text-sm md:text-xl"
+          >
+            The Wise Guy
+          </p>
+
+          <div
+            class="play_btn w-28 sm:w-40 font-nexabold font-black text-xs md:text-lg"
+          >
+            <a
+              href="#"
+              class="block w-full text-black border border-white text-center rounded-full shadow-3xl bg-yellow-400 py-2 px-3 font-nexaheavy font-black"
+              >Play Casino</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <!--Breadcrumbs-->
+
+      <div
+        class="breadcrumbs font-roboto text-xs font-normalleading-6 px-3 max-w-[1430px] mx-auto pt-4 pb-6 md:text-base 2xl:px-0"
+      >
+        <a href="#" class="text-blue-600">Casino</a>
+        <span>&gt;</span>
+        <a href="#" class="text-blue-600">The Wise Guy</a>
+        <span>&gt;</span>
+        <a href="#">The Basics of Baccarat</a>
+      </div>
+
+      <div class="search_container max-w-[1130px] mt-[40px]">
+        <div class="flex flex-col items-start gap-2 lg:flex-row">
+          <div
+            class="related_tags_container mb-8 w-full order-2 lg:max-w-[280px] lg:order-1"
+          >
+            <h4 class="font-nexaheavy text-xl mb-5">Related Tags</h4>
+            <div class="related_tags flex gap-3 flex-wrap">
+              <a
+                href="#"
+                class="block bg-slate-200 px-2 py-1 rounded text-gray-800 font-nexabold"
+                >Poker</a
+              >
+              <a
+                href="#"
+                class="block bg-slate-200 px-2 py-1 rounded text-gray-800 font-nexabold"
+                >How to win baccarat</a
+              >
+              <a
+                href="#"
+                class="block bg-slate-200 px-2 py-1 rounded text-gray-800 font-nexabold"
+                >Adding Betting</a
+              >
+              <a
+                href="#"
+                class="block bg-slate-200 px-2 py-1 rounded text-gray-800 font-nexabold"
+                >Poker</a
+              >
+              <a
+                href="#"
+                class="block bg-slate-200 px-2 py-1 rounded text-gray-800 font-nexabold"
+                >Casino</a
+              >
+              <a
+                href="#"
+                class="block bg-slate-200 px-2 py-1 rounded text-gray-800 font-nexabold"
+                >Adding Betting</a
+              >
+              <a
+                href="#"
+                class="block bg-slate-200 px-2 py-1 rounded text-gray-800 font-nexabold"
+                >Poker</a
+              >
+            </div>
+          </div>
+          <div class="search_list_block max-w-[836px] order-1 lg:order-1">
+            <div class="search_header">
+              <div class="searchby_links">
+                <a
+                  href="#"
+                  class="font-nexaheavy text-base border-b-2 border-black pb-1 mr-4"
+                  >Search by Keyword</a
+                >
+                <a href="#" class="font-nexaheavy text-base pb-1"
+                  >Search by tag</a
+                >
+              </div>
+              <div class="search_box">
+                <div class="relative w-full pt-4 pb-2">
+                  <input
+                    type="text"
+                    placeholder="Search"
+                    class="block border w-full border-gray-100 rounded-full px-4 py-2 pr-10 focus:outline-none focus:border-black font-nexabold"
+                  />
+                  <button class="block absolute right-3 top-6 cursor-pointer">
+                    <img src="./assets/src/images/close-circle.png" alt="" />
+                  </button>
+                </div>
+                <p class="font-nexabold text-sm text-slate-500">
+                  46 results for: “Josh Allen”
+                </p>
+              </div>
+            </div>
+            <div class="search_list mt-10">
+              <div class="selectors_container_header flex flex-col gap-5">
+                <div
+                  class="sub_head text-center rounded-full flex flex-wrap bg-slate-50 border border-slate-100"
+                >
+                  <a
+                    href="#"
+                    class="inline-block bg-yellow-400 text-black rounded-full w-32 text-center font-nexabold text-base py-2 transition-colors duration-300 ease-in-out hover:bg-yellow-400"
+                    >All</a
+                  >
+                  <a
+                    href="#"
+                    class="inline-block text-black rounded-full w-32 text-center font-nexabold text-base py-2 transition-colors duration-300 ease-in-out hover:bg-yellow-400"
+                    >Tutorials</a
+                  >
+                  <a
+                    href="#"
+                    class="inline-block text-black rounded-full w-32 text-center font-nexabold text-base py-2 transition-colors duration-300 ease-in-out hover:bg-yellow-400"
+                    >Strategies</a
+                  >
+                  <a
+                    href="#"
+                    class="inline-block text-black rounded-full w-32 text-center font-nexabold text-base py-2 transition-colors duration-300 ease-in-out hover:bg-yellow-400"
+                    >News</a
+                  >
+                  <a
+                    href="#"
+                    class="inline-block text-black rounded-full w-32 text-center font-nexabold text-base py-2 transition-colors duration-300 ease-in-out hover:bg-yellow-400"
+                    >Blog</a
+                  >
+                  <a
+                    href="#"
+                    class="inline-block text-black rounded-full w-32 text-center font-nexabold text-base py-2 transition-colors duration-300 ease-in-out hover:bg-yellow-400"
+                    >Videos</a
+                  >
+                </div>
+                <div class="sort_by_date mt-4 md:mt-0">
+                  <div class="flex items-center">
+                    <p class="mr-2 font-roboto text-slate-400 text-sm">
+                      By Date
+                    </p>
+                    <select
+                      name=""
+                      class="inline-block font-nexaheavy bg-white border border-gray-800 rounded-full px-4 py-1"
+                    >
+                      <option value="">View All</option>
+                      <option value="">option 1</option>
+                      <option value="">option 1</option>
+                      <option value="">option 1</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="author_post_content flex flex-col gap-6 mt-10">
+                <article class="author_post flex items-center gap-4">
+                  <div
+                    class="post_thumbnail w-1/3 h-20 md:h-40 rounded-lg overflow-hidden"
+                  >
+                    <a href=""
+                      ><img
+                        class="w-full h-full object-cover"
+                        src="/assets/src/images/search_1.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="post_content w-2/3 flex flex-col gap-3">
+                    <p
+                      class="post_date font-roboto text-slate-500 text-sm hidden md:block"
+                    >
+                      Dec 8, 2022 • 13 min read
+                    </p>
+                    <h3
+                      class="post_title font-nexaheavy sm:font-bold text-sm sm:text-2xl leading-4 sm:leading-7 text-neutral-800"
+                    >
+                      <a href=""
+                        >Best Players in Football Cardinals History in Football
+                        Cardinals History</a
+                      >
+                    </h3>
+                    <div class="post_cta">
+                      <a
+                        href=""
+                        class="text-white text-sm border border-neutral-900 rounded-full py-2 px-4 bg-neutral-900"
+                        >Tutorials</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="author_post flex items-center gap-4">
+                  <div
+                    class="post_thumbnail w-1/3 h-20 md:h-40 rounded-lg overflow-hidden"
+                  >
+                    <a href=""
+                      ><img
+                        class="w-full h-full object-cover"
+                        src="/assets/src/images/search_1.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="post_content pl-3 w-2/3 flex flex-col gap-3">
+                    <p
+                      class="post_date font-roboto text-slate-500 text-sm hidden md:block"
+                    >
+                      Dec 8, 2022 • 13 min read
+                    </p>
+                    <h3
+                      class="post_title font-nexaheavy sm:font-bold text-sm sm:text-2xl leading-4 sm:leading-7 text-neutral-800"
+                    >
+                      <a href=""
+                        >Best Players in Football Cardinals History in Football
+                        Cardinals History</a
+                      >
+                    </h3>
+                    <div class="post_cta">
+                      <a
+                        href=""
+                        class="text-white text-sm border border-neutral-900 rounded-full py-2 px-4 bg-neutral-900"
+                        >Tutorials</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="author_post flex items-center gap-4">
+                  <div
+                    class="post_thumbnail w-1/3 h-20 md:h-40 rounded-lg overflow-hidden"
+                  >
+                    <a href=""
+                      ><img
+                        class="w-full h-full object-cover"
+                        src="/assets/src/images/search_1.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="post_content pl-3 w-2/3 flex flex-col gap-3">
+                    <p
+                      class="post_date font-roboto text-slate-500 text-sm hidden md:block"
+                    >
+                      Dec 8, 2022 • 13 min read
+                    </p>
+                    <h3
+                      class="post_title font-nexaheavy sm:font-bold text-sm sm:text-2xl leading-4 sm:leading-7 text-neutral-800"
+                    >
+                      <a href=""
+                        >Best Players in Football Cardinals History in Football
+                        Cardinals History</a
+                      >
+                    </h3>
+                    <div class="post_cta">
+                      <a
+                        href=""
+                        class="text-white text-sm border border-neutral-900 rounded-full py-2 px-4 bg-neutral-900"
+                        >Tutorials</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="author_post flex items-center gap-4">
+                  <div
+                    class="post_thumbnail w-1/3 h-20 md:h-40 rounded-lg overflow-hidden"
+                  >
+                    <a href=""
+                      ><img
+                        class="w-full h-full object-cover"
+                        src="/assets/src/images/search_1.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="post_content pl-3 w-2/3 flex flex-col gap-3">
+                    <p
+                      class="post_date font-roboto text-slate-500 text-sm hidden md:block"
+                    >
+                      Dec 8, 2022 • 13 min read
+                    </p>
+                    <h3
+                      class="post_title font-nexaheavy sm:font-bold text-sm sm:text-2xl leading-4 sm:leading-7 text-neutral-800"
+                    >
+                      <a href=""
+                        >Best Players in Football Cardinals History in Football
+                        Cardinals History</a
+                      >
+                    </h3>
+                    <div class="post_cta">
+                      <a
+                        href=""
+                        class="text-white text-sm border border-neutral-900 rounded-full py-2 px-4 bg-neutral-900"
+                        >Tutorials</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="author_post flex items-center gap-4">
+                  <div
+                    class="post_thumbnail w-1/3 h-20 md:h-40 rounded-lg overflow-hidden"
+                  >
+                    <a href=""
+                      ><img
+                        class="w-full h-full object-cover"
+                        src="/assets/src/images/search_1.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="post_content pl-3 w-2/3 flex flex-col gap-3">
+                    <p
+                      class="post_date font-roboto text-slate-500 text-sm hidden md:block"
+                    >
+                      Dec 8, 2022 • 13 min read
+                    </p>
+                    <h3
+                      class="post_title font-nexaheavy sm:font-bold text-sm sm:text-2xl leading-4 sm:leading-7 text-neutral-800"
+                    >
+                      <a href=""
+                        >Best Players in Football Cardinals History in Football
+                        Cardinals History</a
+                      >
+                    </h3>
+                    <div class="post_cta">
+                      <a
+                        href=""
+                        class="text-white text-sm border border-neutral-900 rounded-full py-2 px-4 bg-neutral-900"
+                        >Tutorials</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="author_post flex items-center gap-4">
+                  <div
+                    class="post_thumbnail w-1/3 h-20 md:h-40 rounded-lg overflow-hidden"
+                  >
+                    <a href=""
+                      ><img
+                        class="w-full h-full object-cover"
+                        src="/assets/src/images/search_1.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="post_content pl-3 w-2/3 flex flex-col gap-3">
+                    <p
+                      class="post_date font-roboto text-slate-500 text-sm hidden md:block"
+                    >
+                      Dec 8, 2022 • 13 min read
+                    </p>
+                    <h3
+                      class="post_title font-nexaheavy sm:font-bold text-sm sm:text-2xl leading-4 sm:leading-7 text-neutral-800"
+                    >
+                      <a href=""
+                        >Best Players in Football Cardinals History in Football
+                        Cardinals History</a
+                      >
+                    </h3>
+                    <div class="post_cta">
+                      <a
+                        href=""
+                        class="text-white text-sm border border-neutral-900 rounded-full py-2 px-4 bg-neutral-900"
+                        >Tutorials</a
+                      >
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="page_btn flex items-center mt-9">
+                <a
+                  href="#"
+                  class="border rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200 mr-2"
+                >
+                  <span class="inline-block align-middle font-nexabold">1</span>
+                </a>
+                <a
+                  href="#"
+                  class="border rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200 mr-2"
+                >
+                  <span class="inline-block align-middle font-nexabold">2</span>
+                </a>
+                <a
+                  href="#"
+                  class="border rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200"
+                >
+                  <span class="inline-block align-middle font-nexabold">3</span>
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-600 hover:text-black px-3 py-2 ml-2"
+                >
+                  ...
+                </a>
+                <a
+                  href="#"
+                  class="border rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200 mr-2"
+                >
+                  <span class="inline-block align-middle font-nexabold"
+                    >25</span
+                  >
+                </a>
+                <a
+                  href="#"
+                  class="border rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200 mr-2"
+                >
+                  <span class="inline-block align-middle">&lt;</span>
+                </a>
+                <a
+                  href="#"
+                  class="border rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200"
+                >
+                  <span class="inline-block align-middle">&gt;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Promo Container-->
+
+    <div
+      class="promo_container flex justify-center items-center bg-slate-50 h-80 my-6"
+    >
+      <div class="promo font-nexaregular text-slate-500 text-xl">ADV</div>
+    </div>
+
+    <!--footer-->
+    <!--Page footer Starts-->
+    <footer
+      class="main_footer px-6 xl:px-0 font-nexabold font-bold relative top-20 bg-neutral-800"
+    >
+      <div class="main_footer mx-auto max-w-7xl">
+        <div
+          class="footer_head_section flex justify-between items-center py-8 border-b border-slate-600"
+        >
+          <div
+            class="footer_social_links flex justify-between items-center w-[80%] md:w-60"
+          >
+            <a href="#"
+              ><img
+                src="./assets/src/images/facebook_footer.png"
+                alt="facebook icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/src/images/instagram.png"
+                alt="instagram icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/src/images/twitter_footer.png"
+                alt="twitter icon"
+            /></a>
+            <a href="#"
+              ><img src="./assets/src/images/shape.png" alt="instagram icon"
+            /></a>
+            <a href="#"
+              ><img src="./assets/src/images/youtube.png" alt="youtube icon"
+            /></a>
+          </div>
+
+          <div class="footer_up_page">
+            <a href=""
+              ><img src="./assets/src/images/top.png" alt="up arrow"
+            /></a>
+          </div>
+        </div>
+
+        <div
+          class="footer_main_section flex flex-wrap justify-between text-white py-10 border-b border-slate-600"
+        >
+          <div class="link-group text-white w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Sportsbook
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/">Online Sportsbook</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/nfl/">NFL Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/ncaaf/">NCAAF Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/nba/">NBA Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/baseball/mlb/">MLB Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/mlb-world-series/">World Series Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/sportsbook/ice-hockey/nhl/">NHL Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/ncaab-college-basketball/">NCAAB Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/uefa-champions-league/"
+                >UEFA Champions League Odds</a
+              >
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/nascar/">Nascar Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/olympic-games/">Olympic Games Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/odds/tennis-french-open/">French Open Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a class="" href="/live-betting/">Live Betting</a>
+            </p>
+          </div>
+
+          <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Casino
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/online-casino/">Online Casino Games</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/online-casino/tournaments/">Tournaments</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/bonuses/">Bonus Play</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/online-casino/blackjack/">Play Blackjack</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/online-casino/slots/">Online Slots</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/casino-guide/">Casino Guide</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/casino-guide/how-to-play-blackjack/"
+                >How to Play Blackjack</a
+              >
+            </p>
+          </div>
+
+          <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Racing
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/racebook/">Racebook</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/sportsbook/horse-racing/">Horse Racing Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/rules/racebook/horse-racing/">Horse Racing Rules</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/help/racebook/glossary/">Racebook Glossary</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/horse-racing/">Horse Race Betting</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/odds/pegasus-world-cup/">Pegasus World Cup</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/sports-betting/horse-racing/triple-crown/"
+                >Triple Crown Betting</a
+              >
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/sports-betting/horse-racing/news/">Horse Racing News</a>
+            </p>
+          </div>
+
+          <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Information
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/sports-betting/">Sports Betting News</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/betus-sportsbook-reviews/">BetUS Sportsbook Reviews</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/how-to-bet-online/">How to Bet Online</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/sports-betting-guide/">How to Bet On Sports</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/about-us/">About Us</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/rules/">Rules &amp; Regulations</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/help/">Help &amp; FAQ</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/press/">Press Room</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/odds/">Sporting Events Odds</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a
+                href="https://revmasters.com/"
+                title="Affiliates - opens in a new window"
+                target="_blank"
+                >Affiliates</a
+              >
+            </p>
+          </div>
+
+          <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Betting Offers
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/bonuses/">Bonuses</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/online-casino/promotions/">Casino Promotions</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/contests/">Contests</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/promotions/welcome-bonus/">Sign Up Bonus</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/promotions/crypto-sign-up-bonus/">Crypto Bonus</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="/promotions/casino-sign-up-bonus/">Casino Bonus</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6">
+              <a href="https://www.betus.com.pa/refer-a-friend-300/"
+                >Refer a Friend</a
+              >
+            </p>
+          </div>
+
+          <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
+            <h5
+              class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+            >
+              Other
+            </h5>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <a class="" href="/join/benefits/">Why Join?</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <a href="/contact/">Contact Us</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <a href="tel:1(800)792-3887">1(800)792-3887</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <a href="#">Email</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <a href="/privacy-policy/">BetUS Privacy Policy</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <a href="/terms-conditions/">Terms &amp; Conditions</a>
+            </p>
+            <p class="m-0 text-[#AFB9CB] text-[12px] leading-6 contact">
+              <a href="/terms-conditions/">Sportsbook Sitemap</a>
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="footer_bottom_section flex flex-col md:flex-row justify-between items-center py-3 md:py-10 border-b border-slate-600"
+        >
+          <div
+            class="link-group flex justify-between items-center w-80 md:w-1/4 py-3 md:py-0"
+          >
+            <p class="text-[#AFB9CB] text-sm">
+              <a class="" href="#">Terms of Service</a>
+            </p>
+            <p class="text-[#AFB9CB] text-sm">
+              <a class="" href="/sportsbook/nfl/">Privacy Policy</a>
+            </p>
+            <p class="text-[#AFB9CB] text-sm">
+              <a class="" href="/sportsbook/ncaaf/">Refund Policy</a>
+            </p>
+          </div>
+
+          <div
+            class="w-full md:w-1/2 text-center text-sm text-[#AFB9CB] pb-3 md:pb-0"
+          >
+            <p>IF YOU HAVE A GAMBLING PROBLEM, CALL 1-800-GAMBLER</p>
+          </div>
+
+          <div class="w-full md:w-1/6 text-right pb-3">
+            <img
+              class="mx-auto md:ml-auto"
+              src="./assets/src/images/betus-logo-footer.png"
+              alt="betus logo footer"
+            />
+          </div>
+        </div>
+
+        <div
+          class="font-nexalight text-[#8E9AB0] py-10 text-center text-[10px]"
+        >
+          <p>
+            © 1994 - 2022 BetUS.. All Rights Reserved The BetUS Brand and Logo
+            are trademarks of BetUS. BetUS is a premier online sportsbook and
+            gambling destination. BetUS is a fully licensed sportsbook providing
+            a reliable and secure sports betting service to millions of
+            satisfied online betting customers world wide since 1994. BetUS
+            offers football betting, live and NFL odds all season long.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

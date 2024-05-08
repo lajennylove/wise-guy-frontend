@@ -28,19 +28,148 @@
       <header
         class="header_container text-white px-3 max-w-[1430px] mx-auto 2xl:px-0"
       >
-        <div class="banner_top flex justify-between items-center py-4">
-          <div class="title w-52 font-ubuntuBold font-bold text-sm md:text-xl">
+        <div
+          class="banner_top flex flex-wrap justify-between items-center py-4"
+        >
+          <div
+            class="title w-28 font-ubuntuBold font-bold text-sm order-1 md:text-xl md:w-36"
+          >
             <p>The Wise Guy</p>
           </div>
+
           <div
-            class="play_btn w-36 font-nexabold font-black text-base md:text-lg"
+            class="navigation w-full mx-auto flex flex-col justify-center items-center gap-2 order-3 py-2 xl:py-0 xl:mx-0 xl:mr-auto xl:order-2 xl:w-[785px] md:flex-row"
           >
-            <a
-              href="#"
-              class="block w-full border border-white text-center rounded-2xl"
-              >Play Casino</a
+            <p
+              class="font-roboto text-xs opacity-50 w-28 self-start md:self-center"
             >
+              Learn by game
+            </p>
+            <div
+              class="navbar-container w-screen overflow-x-scroll whitespace-nowrap px-2 md:px-0 md:overflow-hidden md:w-[696px]"
+            >
+              <ul
+                class="navbar flex gap-1 font-nexabold font-bold text-xs xl:justify-start xl:items-center"
+              >
+                <li
+                  class="hover:underline decoration-yellow-500 underline-offset-8 decoration-2"
+                >
+                  <a class="nav-bg rounded-l-2xl block px-4 py-2" href="#"
+                    >Slots</a
+                  >
+                </li>
+                <li
+                  class="hover:underline decoration-yellow-500 underline-offset-8 decoration-2"
+                >
+                  <a class="nav-bg block px-4 py-2" href="#">Baccarat</a>
+                </li>
+                <li
+                  class="hover:underline decoration-yellow-500 underline-offset-8 decoration-2"
+                >
+                  <a class="nav-bg block px-4 py-2" href="#">Poker</a>
+                </li>
+                <li
+                  class="hover:underline decoration-yellow-500 underline-offset-8 decoration-2"
+                >
+                  <a class="nav-bg block px-4 py-2" href="#">Video Poker</a>
+                </li>
+                <li
+                  class="hover:underline decoration-yellow-500 underline-offset-8 decoration-2"
+                >
+                  <a class="nav-bg block px-4 py-2" href="#">Table Games</a>
+                </li>
+                <li
+                  class="hover:underline decoration-yellow-500 underline-offset-8 decoration-2"
+                >
+                  <a class="nav-bg block px-4 py-2" href="#">Roulette</a>
+                </li>
+                <li
+                  class="hover:underline decoration-yellow-500 underline-offset-8 decoration-2"
+                >
+                  <a class="block nav-bg rounded-r-2xl px-4 py-2" href="#"
+                    >Craps</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
+
+          <div class="flex items-center gap-3 order-2 xl:order-3">
+            <div
+              class="play_btn w-32 font-nexabold font-black text-base md:text-lg md:w-36"
+            >
+              <a
+                href="#"
+                class="block w-full border border-white text-center rounded-2xl"
+                >Play Casino</a
+              >
+            </div>
+
+            <div class="cursor-pointer">
+              <img
+                id="searchIcon"
+                src="/assets/src/images/search_bar.png"
+                alt=""
+              />
+              <img
+                class="hidden"
+                id="closeIcon"
+                src="/assets/src/images/searchBar_close.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <form
+            id="searchInput"
+            class="hidden w-full mx-auto font-nexaregular mt-4 order-4"
+          >
+            <label
+              for="default-search"
+              class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+              >Search</label
+            >
+            <div class="relative">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+              ></div>
+              <input
+                type="search"
+                class="block w-full text-sm p-4 ps-4 text-white border border-slate-500 bg-neutral-900 outline-none rounded-full"
+                placeholder="Search for something"
+                required
+              />
+
+              <button
+                type="submit"
+                class="gradient-searchbtn font-nexaheavy font-black capitalize text-black absolute end-0 top-0 rounded-[200px] flex items-center justify-center gap-2 py-4 px-2 sm:px-8"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                    stroke="#252A32"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 22L20 20"
+                    stroke="#252A32"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="hidden sm:block">Search</span>
+              </button>
+            </div>
+          </form>
         </div>
       </header>
       <!--Banner-->
@@ -381,7 +510,7 @@
             <div class="blocks_container grid grid-cols-1 md:grid-cols-2 gap-8">
               <div class="first_container max-w-[699px]">
                 <div
-                  class="rounded-lg w-[351px] h-[207px] overflow-hidden md:rounded-xl md:w-full md:h-[464px]"
+                  class="rounded-lg w-full h-[207px] overflow-hidden md:rounded-xl md:w-full sm:w-[351px] md:h-[464px]"
                 >
                   <img
                     class="object-cover"
@@ -2454,7 +2583,7 @@
             <div class="blocks_container grid grid-cols-1 md:grid-cols-2 gap-8">
               <div class="first_container max-w-[699px]">
                 <div
-                  class="rounded-lg w-[351px] h-[207px] overflow-hidden md:rounded-xl md:w-full md:h-[464px]"
+                  class="rounded-lg w-full h-[207px] overflow-hidden sm:w-[351px] md:rounded-xl md:w-full md:h-[464px]"
                 >
                   <img
                     class="w-full h-full object-cover"

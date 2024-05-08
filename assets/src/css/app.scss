@@ -236,6 +236,15 @@ video slider home page
   }
 }
 
-/**
-Select arrow css
-**/
+.gradient-searchbtn {
+  background-image: linear-gradient(
+    80deg,
+    #f0b400 3.98%,
+    #ffd558 54.19%,
+    #ffbf00 100%
+  );
+}
+
+.nav-bg {
+  background: linear-gradient(180deg, #282e38 0%, #1d2129 100%);
+}
