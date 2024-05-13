@@ -21,64 +21,47 @@ function domReady(fn) {
 domReady(() => {
   console.log("The Dom is ready! 🚀");
 
-  /** Search bar in navigation js */
-  const searchInput = document.getElementById("searchInput");
-  const searchIcon = document.getElementById("searchIcon");
-  const closeIcon = document.getElementById("closeIcon");
-
-  searchIcon.addEventListener("click", function () {
-    closeIcon.style.display = "block";
-    searchIcon.style.display = "none";
-    searchInput.style.display = "block";
-  });
-
-  closeIcon.addEventListener("click", function () {
-    searchIcon.style.display = "block";
-    closeIcon.style.display = "none";
-    searchInput.style.display = "none";
-  });
-
-  /**
-   *
-   * On hover yellow line on navbar
-   */
-
-  // Function to handle mouseover event
-  function handleMouseOver(event) {
-    event.target.classList.remove("nav-bg");
-  }
-
-  // Function to handle mouseout event
-  function handleMouseOut(event) {
-    event.target.classList.add("nav-bg");
-  }
-
-  // Add event listeners to all list items with the class 'nav-bg'
-  const navItems = document.querySelectorAll(".nav-bg");
-  navItems.forEach((item) => {
-    item.addEventListener("mouseover", handleMouseOver);
-    item.addEventListener("mouseout", handleMouseOut);
-  });
-
   /** logo slider */
 
-  if (document.querySelector(".my-slider")) {
-    var slider = tns({
-      container: ".my-slider",
-      slideBy: "page",
-      autoplay: true,
-      controlsText: [
-        '<img src="/assets/src/images/next_icon.png" />',
-        '<img src="/assets/src/images/next_icon.png" />',
-      ],
-      loop: true,
-      mouseDrag: true,
-      gutter: 10,
-      controls: true,
-      fixedWidth: 86,
-      responsive: {
-        600: {
-          fixedWidth: 253,
+  if (document.querySelector(".learngameSwiper")) {
+    var swiper = new Swiper(".learngameSwiper", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        420: {
+          slidesPerView: 5,
+        },
+
+        640: {
+          slidesPerView: 2.5,
+        },
+
+        768: {
+          slidesPerView: 3,
+        },
+
+        880: {
+          slidesPerView: 3.5,
+        },
+
+        1280: {
+          slidesPerView: 4.5,
+        },
+
+        1200: {
+          slidesPerView: 5,
+        },
+
+        1400: {
+          slidesPerView: 5.5,
         },
       },
     });
@@ -92,17 +75,17 @@ domReady(() => {
   var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
     slidesPerView: 1.5,
+    slidesPerGroupSkip: 1,
     freeMode: true,
     watchSlidesProgress: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    scrollbar: {
-      el: ".swiper-scrollbar",
-      draggable: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
-
     breakpoints: {
       300: {
         slidesPerView: 1.25,
@@ -118,16 +101,20 @@ domReady(() => {
 
       768: {
         slidesPerView: 2.5,
+        slidesPerGroup: 2.5,
       },
       991: {
         slidesPerView: 3.5,
+        slidesPerGroup: 3.5,
       },
       1200: {
         slidesPerView: 4.5,
+        slidesPerGroup: 4.5,
       },
 
       1500: {
         slidesPerView: 5.5,
+        slidesPerGroup: 5,
       },
     },
   });
@@ -174,6 +161,10 @@ domReady(() => {
         slidesPerView: 5,
       },
     },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -212,5 +203,48 @@ domReady(() => {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+  });
+
+  /** Search bar in navigation js */
+  const searchInput = document.getElementById("searchInput");
+  const searchIcon = document.getElementById("searchIcon");
+  const closeIcon = document.getElementById("closeIcon");
+
+  searchIcon.addEventListener("click", function () {
+    closeIcon.style.display = "block";
+    searchIcon.style.display = "none";
+    searchInput.style.display = "block";
+  });
+
+  closeIcon.addEventListener("click", function () {
+    searchIcon.style.display = "block";
+    closeIcon.style.display = "none";
+    searchInput.style.display = "none";
+  });
+
+  /**
+   *
+   * On hover yellow line on navbar
+   */
+
+  // Function to handle mouseover event
+  function handleMouseOver(event) {
+    event.target.classList.remove("nav-bg");
+  }
+
+  // Function to handle mouseout event
+  function handleMouseOut(event) {
+    event.target.classList.add("nav-bg");
+  }
+
+  // Add event listeners to all list items with the class 'nav-bg'
+  const navItems = document.querySelectorAll(".nav-bg");
+  navItems.forEach((item) => {
+    item.addEventListener("mouseover", handleMouseOver);
+    item.addEventListener("mouseout", handleMouseOut);
   });
 });

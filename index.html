@@ -45,18 +45,7 @@
       </header>
       <!--Banner-->
       <div
-        class="relative bg-cover bg-no-repeat bg-center h-72 rounded-xl max-w-[1430px] mx-auto"
-        style="
-          background: linear-gradient(
-              270deg,
-              rgba(0, 0, 0, 0.1) 0%,
-              rgba(0, 0, 0, 0.9) 41.15%,
-              rgba(0, 0, 0, 0.9) 60.42%,
-              rgba(0, 0, 0, 0.1) 100%
-            ),
-            url(/assets/src/images/home_banner.png) lightgray 50% / cover
-              no-repeat;
-        "
+        class="relative home_banner bg-cover bg-no-repeat bg-center h-48 rounded-xl max-w-[1430px] mx-auto md:h-72"
       >
         <div
           class="max-w-[724px] mx-auto flex h-full items-center justify-center font-ubuntuRegular py-14"
@@ -126,9 +115,11 @@
         </div>
       </div>
 
-      <!--Learn By Game container slider-->
+      <!--Learn By Game container slider for Desktop-->
 
-      <div class="learn_by_game mt-2 text-white max-w-[1430px] mx-auto">
+      <div
+        class="learn_by_game mt-2 text-white px-3 max-w-[1430px] mx-auto 2xl:px-0 hidden sm:block"
+      >
         <p
           class="font-roboto text-white opacity-50 font-normal leading-6 text-[8px] sm:text-xs"
         >
@@ -136,123 +127,132 @@
         </p>
 
         <div class="slide_container mt-2 font-nexaregular">
-          <div class="tiny-slider-wrap">
-            <div class="my-slider tiny-slider">
-              <div class="tiny-slider__item">
+          <div class="swiper learngameSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
                 <div
                   class="rounded-xl w-[80px] sm:w-[253px] h-[80px] sm:h-[154px]"
-                  style="
-                    background: linear-gradient(
-                      215deg,
-                      rgba(155, 155, 155, 0.12) 2.22%,
-                      rgba(68, 67, 67, 0.12) 99.87%
-                    );
-                  "
                 >
-                  <p class="p-3">Slots</p>
+                  <img src="./assets/src/images/learn_slots.png" alt="" />
                 </div>
               </div>
-              <div class="tiny-slider__item">
+              <div class="swiper-slide">
                 <div
                   class="rounded-xl w-[80px] sm:w-[253px] h-[80px] sm:h-[154px]"
-                  style="
-                    background: linear-gradient(
-                      215deg,
-                      rgba(155, 155, 155, 0.12) 2.22%,
-                      rgba(68, 67, 67, 0.12) 99.87%
-                    );
-                  "
                 >
-                  <p class="p-3">Baccart</p>
+                  <img src="./assets/src/images/learn_poker.png" alt="" />
                 </div>
               </div>
-              <div class="tiny-slider__item">
+              <div class="swiper-slide">
                 <div
                   class="rounded-xl w-[80px] sm:w-[253px] h-[80px] sm:h-[154px]"
-                  style="
-                    background: linear-gradient(
-                      215deg,
-                      rgba(155, 155, 155, 0.12) 2.22%,
-                      rgba(68, 67, 67, 0.12) 99.87%
-                    );
-                  "
                 >
-                  <p class="p-3">Poker</p>
+                  <img src="./assets/src/images/learn_slots.png" alt="" />
                 </div>
               </div>
-              <div class="tiny-slider__item">
+              <div class="swiper-slide">
                 <div
                   class="rounded-xl w-[80px] sm:w-[253px] h-[80px] sm:h-[154px]"
-                  style="
-                    background: linear-gradient(
-                      215deg,
-                      rgba(155, 155, 155, 0.12) 2.22%,
-                      rgba(68, 67, 67, 0.12) 99.87%
-                    );
-                  "
                 >
-                  <p class="p-3">Video Poker</p>
+                  <img src="./assets/src/images/learn_slots.png" alt="" />
                 </div>
               </div>
-              <div class="tiny-slider__item">
+              <div class="swiper-slide">
                 <div
                   class="rounded-xl w-[80px] sm:w-[253px] h-[80px] sm:h-[154px]"
-                  style="
-                    background: linear-gradient(
-                      215deg,
-                      rgba(155, 155, 155, 0.12) 2.22%,
-                      rgba(68, 67, 67, 0.12) 99.87%
-                    );
-                  "
                 >
-                  <p class="p-3">Table Games</p>
+                  <img src="./assets/src/images/learn_poker.png" alt="" />
                 </div>
               </div>
-              <div class="tiny-slider__item">
+              <div class="swiper-slide">
                 <div
                   class="rounded-xl w-[80px] sm:w-[253px] h-[80px] sm:h-[154px]"
-                  style="
-                    background: linear-gradient(
-                      215deg,
-                      rgba(155, 155, 155, 0.12) 2.22%,
-                      rgba(68, 67, 67, 0.12) 99.87%
-                    );
-                  "
                 >
-                  <p class="p-3">Roulette</p>
+                  <img src="./assets/src/images/learn_slots.png" alt="" />
                 </div>
               </div>
-              <div class="tiny-slider__item">
+              <div class="swiper-slide">
                 <div
                   class="rounded-xl w-[80px] sm:w-[253px] h-[80px] sm:h-[154px]"
-                  style="
-                    background: linear-gradient(
-                      215deg,
-                      rgba(155, 155, 155, 0.12) 2.22%,
-                      rgba(68, 67, 67, 0.12) 99.87%
-                    );
-                  "
                 >
-                  <p class="p-3">Slots</p>
+                  <img src="./assets/src/images/learn_slots.png" alt="" />
                 </div>
               </div>
-              <div class="tiny-slider__item">
+              <div class="swiper-slide">
                 <div
                   class="rounded-xl w-[80px] sm:w-[253px] h-[80px] sm:h-[154px]"
-                  style="
-                    background: linear-gradient(
-                      215deg,
-                      rgba(155, 155, 155, 0.12) 2.22%,
-                      rgba(68, 67, 67, 0.12) 99.87%
-                    );
-                  "
                 >
-                  <p class="p-3">Slots</p>
+                  <img src="./assets/src/images/learn_poker.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl w-[80px] sm:w-[253px] h-[80px] sm:h-[154px]"
+                >
+                  <img src="./assets/src/images/learn_slots.png" alt="" />
                 </div>
               </div>
             </div>
+            <!-- buttons -->
+            <div class="swiper-button-next z-50">
+              <img src="/assets/src/images/next_icon.png" alt="next icon" />
+            </div>
+            <div class="swiper-button-prev rotate-180">
+              <img src="/assets/src/images/next_icon.png" alt="previous icon" />
+            </div>
           </div>
         </div>
+      </div>
+
+      <!--Learn by Game navigation for Mobile-->
+
+      <div
+        class="navbar-container w-screen overflow-x-scroll whitespace-nowrap px-2 mt-5 block sm:hidden"
+      >
+        <p
+          class="font-roboto text-white opacity-50 font-normal leading-6 text-[8px]"
+        >
+          Learn by game
+        </p>
+        <ul
+          class="navbar flex gap-1 font-nexabold font-bold text-xs xl:justify-start xl:items-center"
+        >
+          <li
+            class="hover:underline decoration-yellow-500 underline-offset-8 decoration-2"
+          >
+            <a class="nav-bg rounded-l-2xl block px-4 py-2" href="#">Slots</a>
+          </li>
+          <li
+            class="hover:underline decoration-yellow-500 underline-offset-8 decoration-2"
+          >
+            <a class="nav-bg block px-4 py-2" href="#">Baccarat</a>
+          </li>
+          <li
+            class="hover:underline decoration-yellow-500 underline-offset-8 decoration-2"
+          >
+            <a class="nav-bg block px-4 py-2" href="#">Poker</a>
+          </li>
+          <li
+            class="hover:underline decoration-yellow-500 underline-offset-8 decoration-2"
+          >
+            <a class="nav-bg block px-4 py-2" href="#">Video Poker</a>
+          </li>
+          <li
+            class="hover:underline decoration-yellow-500 underline-offset-8 decoration-2"
+          >
+            <a class="nav-bg block px-4 py-2" href="#">Table Games</a>
+          </li>
+          <li
+            class="hover:underline decoration-yellow-500 underline-offset-8 decoration-2"
+          >
+            <a class="nav-bg block px-4 py-2" href="#">Roulette</a>
+          </li>
+          <li
+            class="hover:underline decoration-yellow-500 underline-offset-8 decoration-2"
+          >
+            <a class="block nav-bg rounded-r-2xl px-4 py-2" href="#">Craps</a>
+          </li>
+        </ul>
       </div>
 
       <!--The Latest Block-->
@@ -267,10 +267,17 @@
               class="latest_blocks_container flex items-start flex-col md:flex-row gap-8"
             >
               <div class="first_container flex-auto w-full md:w-[699px]">
-                <div class="w-full h-[464px] rounded-xl overflow-hidden">
+                <div
+                  class="w-full h-[207px] max-w-[351px] rounded-xl overflow-hidden sm:h-[464px] sm:max-w-full"
+                >
                   <img
-                    class="w-full h-full object-cover"
+                    class="w-full h-full object-cover hidden sm:block"
                     src="./assets/src/images/latest_image.png"
+                    alt="latest images"
+                  />
+                  <img
+                    class="w-full h-full object-cover block sm:hidden"
+                    src="./assets/src/images/latest_mob.png"
                     alt="latest images"
                   />
                 </div>
@@ -546,28 +553,32 @@
                 </div>
 
                 <div
-                  class="post_meta_date text-neutral-400 flex items-center mt-3"
+                  class="flex flex-row items-center gap-2 md:flex-col md:items-start"
                 >
-                  <span
-                    class="text-[10px] font-roboto font-normal leading-4 md:text-sm"
+                  <div
+                    class="post_meta_date text-neutral-400 flex items-center mt-3"
                   >
-                    <time class="dt-published"> Apr 24 </time>
-                    - 12 minutes read
-                  </span>
-                </div>
-                <div
-                  class="text-xs font-nexabold text-zinc-300 font-bold md:text-base flex items-center gap-2 mt-2"
-                >
-                  <a
-                    href="#"
-                    class="block border border-gray-800 rounded-2xl px-4"
-                    >Bidding</a
+                    <span
+                      class="text-[10px] font-roboto font-normal leading-4 md:text-sm"
+                    >
+                      <time class="dt-published"> Apr 24 </time>
+                      - 12 minutes read
+                    </span>
+                  </div>
+                  <div
+                    class="text-xs font-nexabold text-zinc-300 font-bold md:text-base flex items-center gap-2 mt-2"
                   >
-                  <a
-                    href="#"
-                    class="block border border-gray-800 rounded-2xl px-4"
-                    >Poker</a
-                  >
+                    <a
+                      href="#"
+                      class="block border border-gray-800 rounded-2xl px-4"
+                      >Bidding</a
+                    >
+                    <a
+                      href="#"
+                      class="block border border-gray-800 rounded-2xl px-4"
+                      >Poker</a
+                    >
+                  </div>
                 </div>
               </div>
               <div class="block max-w-[350px]">
@@ -596,28 +607,32 @@
                 </div>
 
                 <div
-                  class="post_meta_date text-neutral-400 flex items-center mt-3"
+                  class="flex flex-row items-center gap-2 md:flex-col md:items-start"
                 >
-                  <span
-                    class="text-[10px] font-roboto font-normal leading-4 md:text-sm"
+                  <div
+                    class="post_meta_date text-neutral-400 flex items-center mt-3"
                   >
-                    <time class="dt-published"> Apr 24 </time>
-                    - 12 minutes read
-                  </span>
-                </div>
-                <div
-                  class="text-xs font-nexabold text-zinc-300 font-bold md:text-base flex items-center gap-2 mt-2"
-                >
-                  <a
-                    href="#"
-                    class="block border border-gray-800 rounded-2xl px-4"
-                    >Bidding</a
+                    <span
+                      class="text-[10px] font-roboto font-normal leading-4 md:text-sm"
+                    >
+                      <time class="dt-published"> Apr 24 </time>
+                      - 12 minutes read
+                    </span>
+                  </div>
+                  <div
+                    class="text-xs font-nexabold text-zinc-300 font-bold md:text-base flex items-center gap-2 mt-2"
                   >
-                  <a
-                    href="#"
-                    class="block border border-gray-800 rounded-2xl px-4"
-                    >Poker</a
-                  >
+                    <a
+                      href="#"
+                      class="block border border-gray-800 rounded-2xl px-4"
+                      >Bidding</a
+                    >
+                    <a
+                      href="#"
+                      class="block border border-gray-800 rounded-2xl px-4"
+                      >Poker</a
+                    >
+                  </div>
                 </div>
               </div>
               <div class="block max-w-[350px]">
@@ -646,28 +661,32 @@
                 </div>
 
                 <div
-                  class="post_meta_date text-neutral-400 flex items-center mt-3"
+                  class="flex flex-row items-center gap-2 md:flex-col md:items-start"
                 >
-                  <span
-                    class="text-[10px] font-roboto font-normal leading-4 md:text-sm"
+                  <div
+                    class="post_meta_date text-neutral-400 flex items-center mt-3"
                   >
-                    <time class="dt-published"> Apr 24 </time>
-                    - 12 minutes read
-                  </span>
-                </div>
-                <div
-                  class="text-xs font-nexabold text-zinc-300 font-bold md:text-base flex items-center gap-2 mt-2"
-                >
-                  <a
-                    href="#"
-                    class="block border border-gray-800 rounded-2xl px-4"
-                    >Bidding</a
+                    <span
+                      class="text-[10px] font-roboto font-normal leading-4 md:text-sm"
+                    >
+                      <time class="dt-published"> Apr 24 </time>
+                      - 12 minutes read
+                    </span>
+                  </div>
+                  <div
+                    class="text-xs font-nexabold text-zinc-300 font-bold md:text-base flex items-center gap-2 mt-2"
                   >
-                  <a
-                    href="#"
-                    class="block border border-gray-800 rounded-2xl px-4"
-                    >Poker</a
-                  >
+                    <a
+                      href="#"
+                      class="block border border-gray-800 rounded-2xl px-4"
+                      >Bidding</a
+                    >
+                    <a
+                      href="#"
+                      class="block border border-gray-800 rounded-2xl px-4"
+                      >Poker</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -686,12 +705,7 @@
           class="subscribe_block_container text-white max-w-[1430px] mx-auto"
         >
           <div
-            class="subscribe_block border border-neutral-800 rounded-2xl py-14 px-3 2xl:px-0"
-            style="
-              background: url(<path-to-image>) lightgray 50% / cover no-repeat,
-                url(<path-to-image>) lightgray 50% / cover no-repeat;
-              box-shadow: 0px 0px 200px 0px rgba(255, 191, 0, 0.04);
-            "
+            class="subscribe_block_home border border-neutral-800 rounded-2xl py-14 px-3 2xl:px-0"
           >
             <div class="content_block max-w-[700px] mx-auto text-center">
               <h2
@@ -757,7 +771,7 @@
             <div class="blocks_container grid grid-cols-1 md:grid-cols-2 gap-8">
               <div class="first_container max-w-[699px]">
                 <div
-                  class="rounded-lg w-[351px] h-[207px] overflow-hidden md:rounded-xl md:w-full md:h-[464px]"
+                  class="rounded-lg max-w-[351px] overflow-hidden md:rounded-xl md:max-w-full"
                 >
                   <img
                     class="object-cover"
@@ -1480,6 +1494,12 @@
                     );
                   "
                 ></div>
+
+                <div
+                  class="play_btn absolute top-1/2 left-1/2 -translate-1/2 z-20 cursor-pointer hidden lg:block"
+                >
+                  <img src="/assets/src/images/Play.png" alt="" />
+                </div>
               </div>
               <div class="swiper-slide">
                 <div class="rounded-2xl overflow-hidden w-full h-full">
@@ -1548,6 +1568,11 @@
                     );
                   "
                 ></div>
+                <div
+                  class="play_btn absolute top-1/2 left-1/2 -translate-1/2 z-20 cursor-pointer hidden lg:block"
+                >
+                  <img src="/assets/src/images/Play.png" alt="" />
+                </div>
               </div>
               <div class="swiper-slide">
                 <div class="rounded-2xl overflow-hidden w-full h-full">
@@ -1616,6 +1641,12 @@
                     );
                   "
                 ></div>
+
+                <div
+                  class="play_btn absolute top-1/2 left-1/2 -translate-1/2 z-20 cursor-pointer hidden lg:block"
+                >
+                  <img src="/assets/src/images/Play.png" alt="" />
+                </div>
               </div>
               <div class="swiper-slide">
                 <div class="rounded-2xl overflow-hidden w-full h-full">
@@ -1684,6 +1715,11 @@
                     );
                   "
                 ></div>
+                <div
+                  class="play_btn absolute top-1/2 left-1/2 -translate-1/2 z-20 cursor-pointer hidden lg:block"
+                >
+                  <img src="/assets/src/images/Play.png" alt="" />
+                </div>
               </div>
               <div class="swiper-slide">
                 <div class="rounded-2xl overflow-hidden w-full h-full">
@@ -1752,6 +1788,12 @@
                     );
                   "
                 ></div>
+
+                <div
+                  class="play_btn absolute top-1/2 left-1/2 -translate-1/2 z-20 cursor-pointer hidden lg:block"
+                >
+                  <img src="/assets/src/images/Play.png" alt="" />
+                </div>
               </div>
               <div class="swiper-slide">
                 <div class="rounded-2xl overflow-hidden w-full h-full">
@@ -1820,6 +1862,11 @@
                     );
                   "
                 ></div>
+                <div
+                  class="play_btn absolute top-1/2 left-1/2 -translate-1/2 z-20 cursor-pointer hidden lg:block"
+                >
+                  <img src="/assets/src/images/Play.png" alt="" />
+                </div>
               </div>
               <div class="swiper-slide">
                 <div class="rounded-2xl overflow-hidden w-full h-full">
@@ -1888,6 +1935,12 @@
                     );
                   "
                 ></div>
+
+                <div
+                  class="play_btn absolute top-1/2 left-1/2 -translate-1/2 z-20 cursor-pointer hidden lg:block"
+                >
+                  <img src="/assets/src/images/Play.png" alt="" />
+                </div>
               </div>
               <div class="swiper-slide">
                 <div class="rounded-2xl overflow-hidden w-full h-full">
@@ -1956,6 +2009,11 @@
                     );
                   "
                 ></div>
+                <div
+                  class="play_btn absolute top-1/2 left-1/2 -translate-1/2 z-20 cursor-pointer hidden lg:block"
+                >
+                  <img src="/assets/src/images/Play.png" alt="" />
+                </div>
               </div>
               <div class="swiper-slide">
                 <div class="rounded-2xl overflow-hidden w-full h-full">
@@ -2024,6 +2082,12 @@
                     );
                   "
                 ></div>
+
+                <div
+                  class="play_btn absolute top-1/2 left-1/2 -translate-1/2 z-20 cursor-pointer hidden lg:block"
+                >
+                  <img src="/assets/src/images/Play.png" alt="" />
+                </div>
               </div>
               <div class="swiper-slide">
                 <div class="rounded-2xl overflow-hidden w-full h-full">
@@ -2092,74 +2156,11 @@
                     );
                   "
                 ></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="rounded-2xl overflow-hidden w-full h-full">
-                  <img
-                    class="w-full h-full object-cover"
-                    src="/assets/src/images/video_main.png"
-                  />
-                </div>
                 <div
-                  class="relative text-white max-w-lg md:absolute md:top-1/2 md:-translate-y-1/2 md:pl-14 z-20"
+                  class="play_btn absolute top-1/2 left-1/2 -translate-1/2 z-20 cursor-pointer hidden lg:block"
                 >
-                  <div
-                    class="post_meta_date mb-4 hidden md:flex md:items-center"
-                  >
-                    <span
-                      class="text-[10px] font-roboto font-normal leading-4 md:text-sm"
-                    >
-                      <time class="dt-published"> Apr 24 </time>
-                      - 12 minutes read
-                    </span>
-                  </div>
-                  <h2
-                    class="text-lg font-nexabold font-bold leading-6 mt-4 md:text-5xl md:mt-0"
-                  >
-                    The Fibonacci system is one of the safest Roulette
-                    strategies.
-                  </h2>
-                  <p
-                    class="mt-8 text-base font-nexaregular leading-6 md:text-sm"
-                  >
-                    Despite the fact that it’s quite safe to use, the Fibonacci
-                    still has the potential to bring you some wins.
-                  </p>
-                  <div class="tags flex items-center gap-2 mt-4 md:hidden">
-                    <div class="post_meta_date flex items-center">
-                      <span
-                        class="text-[10px] font-roboto font-normal leading-4"
-                      >
-                        <time class="dt-published"> Apr 24 </time>
-                        - 12 minutes read
-                      </span>
-                    </div>
-                    <div
-                      class="text-xs font-nexabold text-zinc-300 font-bold md:text-base flex items-center gap-2"
-                    >
-                      <a
-                        href="#"
-                        class="block border border-gray-800 rounded-2xl px-4"
-                        >Roulette</a
-                      >
-                      <a
-                        href="#"
-                        class="block border border-gray-800 rounded-2xl px-4"
-                        >Safe</a
-                      >
-                    </div>
-                  </div>
+                  <img src="/assets/src/images/Play.png" alt="" />
                 </div>
-                <div
-                  class="gradient absolute w-full h-full top-0 left-0 z-10 hidden md:block"
-                  style="
-                    background-image: linear-gradient(
-                      90deg,
-                      rgba(0, 0, 0, 0.95) 21.35%,
-                      rgba(0, 0, 0, 0) 100%
-                    );
-                  "
-                ></div>
               </div>
             </div>
           </div>
@@ -2463,7 +2464,7 @@
             <div class="swiper-button-prev rotate-180">
               <img src="/assets/src/images/next_icon.png" alt="previous icon" />
             </div>
-            <div class="swiper-scrollbar"></div>
+            <div class="swiper-pagination"></div>
           </div>
           <a
             href="#"
@@ -2513,7 +2514,7 @@
             <div class="blocks_container grid grid-cols-1 md:grid-cols-2 gap-8">
               <div class="first_container max-w-[699px]">
                 <div
-                  class="rounded-lg w-[351px] h-[207px] overflow-hidden md:rounded-xl md:w-full md:h-[464px]"
+                  class="rounded-lg max-w-[351px] h-[207px] overflow-hidden md:rounded-xl md:max-w-full md:h-[464px]"
                 >
                   <img
                     class="w-full h-full object-cover"
@@ -3020,6 +3021,8 @@
               <img src="/assets/src/images/next_icon.png" alt="previous icon" />
             </div>
 
+            <div class="swiper-pagination"></div>
+
             <div
               class="shadow w-36 h-full absolute right-0 top-0 z-10 hidden md:block"
               style="
@@ -3066,7 +3069,7 @@
             <div class="blocks_container grid grid-cols-1 md:grid-cols-2 gap-8">
               <div class="first_container max-w-[699px]">
                 <div
-                  class="rounded-lg w-[351px] h-[207px] overflow-hidden md:rounded-xl md:w-full md:h-[464px]"
+                  class="rounded-lg max-w-[351px] h-[207px] overflow-hidden md:rounded-xl md:max-w-full md:h-[464px]"
                 >
                   <img
                     class="w-full h-full object-cover"
@@ -3881,6 +3884,8 @@
             <div class="swiper-button-prev rotate-180">
               <img src="/assets/src/images/next_icon.png" alt="previous icon" />
             </div>
+
+            <div class="swiper-pagination"></div>
           </div>
         </div>
         <div
@@ -3906,7 +3911,7 @@
       <!--Page footer Starts-->
 
       <footer
-        class="main_footer px-6 xl:px-0 font-nexabold font-bold relative top-20"
+        class="main_footer px-6 xl:px-0 font-nexaregular font-regular relative top-20"
       >
         <div class="main_footer mx-auto max-w-7xl">
           <div
@@ -3917,7 +3922,7 @@
             >
               <a href="#"
                 ><img
-                  src="./assets/src/images/facebook.png"
+                  src="./assets/src/images/facebook_footer.png"
                   alt="facebook icon"
               /></a>
               <a href="#"
@@ -3926,7 +3931,9 @@
                   alt="instagram icon"
               /></a>
               <a href="#"
-                ><img src="./assets/src/images/twitter.png" alt="twitter icon"
+                ><img
+                  src="./assets/src/images/twitter_footer.png"
+                  alt="twitter icon"
               /></a>
               <a href="#"
                 ><img src="./assets/src/images/shape.png" alt="instagram icon"
@@ -3944,11 +3951,11 @@
           </div>
 
           <div
-            class="footer_main_section flex flex-wrap justify-between text-white py-10 border-b border-[#372D75]"
+            class="footer_main_section flex flex-wrap justify-between text-white pb-7 border-b border-[#372D75]"
           >
             <div class="link-group text-white w-1/2 lg:w-1/3 xl:w-1/6">
               <h5
-                class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+                class="footer_title mt-8 text-[24px] leading-6 font-bold mb-5 font-nexaBold"
               >
                 Sportsbook
               </h5>
@@ -4001,7 +4008,7 @@
 
             <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
               <h5
-                class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+                class="footer_title mt-8 text-[24px] leading-6 font-bold mb-5 font-nexaBold"
               >
                 Casino
               </h5>
@@ -4032,7 +4039,7 @@
 
             <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
               <h5
-                class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+                class="footer_title mt-8 text-[24px] leading-6 font-bold mb-5 font-nexaBold"
               >
                 Racing
               </h5>
@@ -4068,7 +4075,7 @@
 
             <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
               <h5
-                class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+                class="footer_title mt-8 text-[24px] leading-6 font-bold mb-5 font-nexaBold"
               >
                 Information
               </h5>
@@ -4113,7 +4120,7 @@
 
             <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
               <h5
-                class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+                class="footer_title w-[152px] mt-8 text-[24px] leading-6 font-bold mb-5 font-nexaBold sm:w-full"
               >
                 Betting Offers
               </h5>
@@ -4144,7 +4151,7 @@
 
             <div class="link-group w-1/2 lg:w-1/3 xl:w-1/6">
               <h5
-                class="footer_title text-[24px] leading-6 font-bold mb-5 font-nexaBold"
+                class="footer_title mt-8 text-[24px] leading-6 font-bold mb-5 font-nexaBold"
               >
                 Other
               </h5>
