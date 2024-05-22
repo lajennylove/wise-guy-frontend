@@ -63,6 +63,29 @@
   src: url(../fonts/Ubuntu-Medium.ttf);
 }
 
+/**
+Navigation Game Page 
+**/
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.nav-item:hover::after {
+  background-color: #ffc107; /* Your yellow color */
+}
+
 .home_banner {
   background: linear-gradient(
       270deg,
